@@ -1,3 +1,9 @@
+# NetlifyCMS
+
+We love open-source and it looks like you do too! Contribute by submitting a pull request with your changes.
+
+Cheers!
+
 ## Usage
 
 Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:

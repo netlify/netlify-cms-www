@@ -1,7 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <title>Hugo with Gulp and Webpack</title>
+    <title>{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/main.css"/>
   </head>
   <body>
+    <header id="header">
+      <div class="contained">
+        <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>
+        <a href="/docs">Docs</a>
+        <a href="https://github.com/netlify/netlify-cms" class="btn-secondary small"><img src="/img/github.svg"/> View on GitHub</a>
+      </div>
+    </header>

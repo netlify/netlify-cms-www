@@ -1,0 +1,25 @@
+---
+hero:
+  headline: "The best open-source <br>CMS for static sites."
+  subhead: |
+    - Create, edit, and review drafts
+    - Publish content without writing code
+    - Built in version control with GitHub
+    - Completely free and open source
+
+cta:
+  primarycta:
+    copy: "Get Started Quick"
+    link: "/intro"
+  secondarycta:
+    copy: "Download Now"
+    link: "/download"
+
+productvideo:
+  thumbnail: "/img/hero-graphic.jpg"
+  mp4: "/img/demo.mp4"
+  ogg: "/img/demo.ogg"
+  webm: "/img/demo.webm"
+
+thanksdevs: "**Thanks to all our contributors.**Keep shooting for the stars with Netlify CMS."
+---

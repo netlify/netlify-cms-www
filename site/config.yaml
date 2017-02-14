@@ -1,5 +1,5 @@
 baseurl: "/"
 languageCode: "en-us"
-title: "Title"
+title: "NetlifyCMS | Open-Source Content Management System"
 disable404: true
 metaDataFormat: "yaml"

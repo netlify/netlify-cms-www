@@ -1,5 +1,15 @@
 <footer>
-  <p class="contained">Made with <img src="/img/heart.svg"/> by our friends at <a href="https://www.netlify.com">Netlify</a>.</p>
+  <div class="container">
+    <div class="footer-hook">
+      <h1>{{ .Site.Data.global.footer.hook | markdownify }}</h1>
+    </div>
+    <div class="footer-content">
+      <img src="/img/netlify-logo.svg" />
+      <h3>{{ .Site.Data.global.footer.headline | markdownify }}</h3>
+      <p>{{ .Site.Data.global.footer.body | markdownify }}</p>
+      <a class="btn-secondary" href="{{ .Site.Data.global.footer.cta.secondarycta.link }}">{{ .Site.Data.global.footer.cta.secondarycta.copy | markdownify }}</a>
+    </div>
+  </div>
 </footer>
 
 <script src="/app.js"></script>

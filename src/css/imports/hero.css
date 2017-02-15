@@ -4,13 +4,21 @@
   background-image: linear-gradient(-17deg, $darkerGrey 17%, $darkGrey 94%);
   color: white;
   overflow: hidden;
-  padding: calc($large * 1.5) 0 $large 0;
+  padding: calc($xl * 1.75) 0 $large 0;
   position: relative;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: calc($xl * 1.5);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: calc($large * 1.5);
+  }
 
   &:before {
     background: url('/img/bow.svg') no-repeat bottom center;
     background-size: contain;
-    bottom: 0;
+    bottom: -1px;
     content: '';
     height: $xl;
     left: -$xl;
@@ -25,21 +33,55 @@
   }
 
   .hero-copy {
-    @neat-span-columns 6;
+    @media screen and (min-width: $mobile) {
+      @neat-span-columns 6;
+    }
   }
 
   .headline {
     margin-top: -12px;
+
+    @media screen and (min-width: $mobile) {
+      text-align: left;
+    }
+
+    span {
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+        display: initial;
+      }
+    }
   }
 
   .subhead {
-    margin: $medium 0;
+    display: inline-block;
+    margin: $micro auto;
+    text-align: left;
+
+    @media screen and (min-width: $mobile) {
+      display: block;
+      margin: $medium 0;
+    }
+  }
+
+  .btn-primary {
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+      display: inline-block;
+    }
   }
 
   .btn-secondary {
-    margin-left: calc($micro / 2);
+    display: none;
     padding-top: 14px;
     max-height: 53px;
+    margin: 0 0 0 calc($micro / 2);
+
+    @media screen and (min-width: $tablet) {
+      display: inline-block;
+    }
   }
 
   strong {
@@ -57,6 +99,11 @@
 
   .hero-graphic {
     @neat-span-columns 6;
+    display: none;
+
+    @media screen and (min-width: $mobile) {
+      display: initial;
+    }
 
     &:before {
       border: 1px solid white;
@@ -83,10 +130,14 @@
   }
 
   .thanks-devs {
-    font-size: $tiny;
-    line-height: 21px;
+    line-height: 18px;
     margin: $micro 0 0 0;
     opacity: 0.5;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      font-size: $tiny;
+      line-height: 21px;
+    }
   }
 }

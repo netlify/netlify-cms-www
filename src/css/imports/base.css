@@ -43,7 +43,7 @@ h3 {
   margin: 0;
 }
 
-p {
+p, ul {
   font-size: 14px;
   line-height: $small;
 

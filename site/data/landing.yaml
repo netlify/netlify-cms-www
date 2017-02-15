@@ -1,6 +1,6 @@
 ---
 hero:
-  headline: "The best open-source <br>CMS for static sites."
+  headline: "The best open-source <span><br></span>CMS for static sites."
   subhead: |
     - Create, edit, and review drafts
     - Publish content without writing code

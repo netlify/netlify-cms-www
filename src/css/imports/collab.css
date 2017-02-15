@@ -1,27 +1,38 @@
 .collab {
-  margin: $small auto;
+  margin: $medium $tiny;
 
   @media screen and (min-width: $mobile) {
-    margin: $medium auto;
-  }
-
-  @media screen and (min-width: $tablet) {
     margin: $large auto;
   }
 
   h1 {
+    margin-bottom: $small;
     text-align: center;
-    margin-bottom: $large;
+
+    @media screen and (min-width: $mobile) {
+      margin-bottom: $large;
+    }
   }
 
   .collab-graphic {
-    @neat-span-columns 4;
-    @neat-shift 1;
+    @media screen and (min-width: $mobile) {
+      @neat-span-columns 4;
+      @neat-shift 1;
+    }
   }
 
   p {
-    @neat-span-columns 5;
-    @neat-shift 1;
     margin-top: $medium;
+
+    @media screen and (min-width: $mobile) {
+      margin-top: 0;
+      text-align: left;
+      @neat-span-columns 5;
+      @neat-shift 1;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-top: $medium;
+    }
   }
 }

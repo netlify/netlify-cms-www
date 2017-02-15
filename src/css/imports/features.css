@@ -1,18 +1,17 @@
 .features {
   @neat-row;
   overflow: hidden;
-  padding-top: $medium;
+  padding-top: $large;
   position: relative;
   margin: 0 auto $medium auto;
 
   @media screen and (min-width: $mobile) {
-    margin: 0 auto $large auto;
-    padding-top: $large;
+    margin: 0 auto $xl auto;
+    padding-top: calc($xl * 1.2);
   }
 
   @media screen and (min-width: $tablet) {
-    margin: 0 auto $xl auto;
-    padding-top: calc($xl * 1.2);
+    margin-bottom: $medium;
   }
 
   &:before {
@@ -30,19 +29,39 @@
   h1 {
     text-align: center;
     margin-bottom: calc($large * .9);
+    padding: 0 $small;
 
-    + .features-column {
-      text-align: right;
+    @media screen and (min-width: $tablet) {
+      padding: 0;
+    }
+
+    + .features-column .feature {
+      @media screen and (min-width: $desktop) {
+        text-align: right;
+      }
     }
   }
 
   .features-column {
-    @neat-span-columns 4;
+    @media screen and (min-width: $mobile) {
+      @neat-span-columns 6;
+    }
 
+    @media screen and (min-width: $desktop) {
+      @neat-span-columns 4;
+    }
   }
 
   .feature {
-    margin-bottom: calc($large * 1.37);
+    margin-bottom: $small;
+    padding: 0 $small;
+    text-align: left;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: calc($large * 1.37);
+      padding: 0;
+    }
+
     p {
       font-size: 14px;
       line-height: 26px;
@@ -50,7 +69,13 @@
   }
 
   .features-graphic {
-    @neat-span-columns 4;
+    display: none;
     padding-top: $tiny;
+
+
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+      @neat-span-columns 4;
+    }
   }
 }

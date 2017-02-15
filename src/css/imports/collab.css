@@ -1,4 +1,13 @@
 .collab {
+  margin: $small auto;
+
+  @media screen and (min-width: $mobile) {
+    margin: $medium auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: $large auto;
+  }
 
   h1 {
     text-align: center;

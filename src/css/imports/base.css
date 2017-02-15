@@ -12,18 +12,6 @@ body {
   }
 }
 
-section:not(.hero) {
-  margin: $medium auto;
-
-  @media screen and (min-width: $mobile) {
-    margin: $large auto;
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin: $xl auto;
-  }
-}
-
 h1 {
   font-weight: $light;
   font-size: $small;
@@ -49,8 +37,9 @@ h2 {
 
 h3 {
   font-family: $roboto;
-  font-size: 14px;
+  font-size: $small;
   font-weight: $regular;
+  line-height: 32px;
   margin: 0;
 }
 

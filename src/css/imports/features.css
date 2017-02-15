@@ -1,0 +1,56 @@
+.features {
+  @neat-row;
+  overflow: hidden;
+  padding-top: $medium;
+  position: relative;
+  margin: 0 auto $medium auto;
+
+  @media screen and (min-width: $mobile) {
+    margin: 0 auto $large auto;
+    padding-top: $large;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 auto $xl auto;
+    padding-top: calc($xl * 1.2);
+  }
+
+  &:before {
+    background: url('/img/wavy-divider.svg') no-repeat top center;
+    background-size: contain;
+    top: 0;
+    content: '';
+    height: $xl;
+    left: -$xl;
+    position: absolute;
+    right: -$xl;
+    width: calc(100% + ($xl * 2));
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: calc($large * .9);
+
+    + .features-column {
+      text-align: right;
+    }
+  }
+
+  .features-column {
+    @neat-span-columns 4;
+
+  }
+
+  .feature {
+    margin-bottom: calc($large * 1.37);
+    p {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  .features-graphic {
+    @neat-span-columns 4;
+    padding-top: $tiny;
+  }
+}

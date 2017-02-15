@@ -27,4 +27,22 @@ collab:
   hook: "Stop fighting clunky tools like Wordpress."
   body: "Finally, an open-source CMS that brings the ease of WordPress-style editing to the simplicity and speed of static sites. A CMS shouldn’t just favor the editorial workflow - it should seamlessly integrate the roles of developers, writers, and editors with ease."
   graphicpath: "/img/collab.svg"
+
+featureshook: "Designed with developers in mind - it’s in our DNA."
+
+features:
+  - feature: "Easy Installation"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Fast Web-based UI"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Platform Agnostic"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Modern Authentication"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Fully Extensible"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Flexible Content Types"
+    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+
+featuresgraphic: "/img/helix.svg"
 ---

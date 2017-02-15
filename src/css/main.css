@@ -2,8 +2,5 @@
 @import "imports/utilities.css";
 @import "imports/header.css";
 @import "imports/hero.css";
-@import "imports/jam-breakdown.css";
-@import "imports/resources.css";
-@import "imports/chatter.css";
+@import "imports/collab.css";
 @import "imports/footer.css";
-@import "imports/examples.css";

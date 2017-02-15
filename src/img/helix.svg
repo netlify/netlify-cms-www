@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="297px" height="507px" viewBox="0 0 297 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>helix</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="98.2342156%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B2DE3F" offset="3.08713329%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.2342156%" y1="50%" x2="3.03262117%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#B2DE3F" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.25007972%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.336135643" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-4" cx="90" cy="43.1999512" rx="8" ry="8"></ellipse>
+        <ellipse id="path-5" cx="36" cy="8" rx="8" ry="8"></ellipse>
+        <linearGradient x1="98.2342156%" y1="50%" x2="8.50014503e-15%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#B2DE3F" offset="3.08713329%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-7" cx="63" cy="8" rx="8" ry="8"></ellipse>
+        <circle id="path-8" cx="63" cy="43.1999512" r="8"></circle>
+        <ellipse id="path-9" cx="35" cy="43.1999512" rx="8" ry="8"></ellipse>
+        <ellipse id="path-10" cx="8" cy="8" rx="8" ry="8"></ellipse>
+    </defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cms-landing-v6" transform="translate(-573.000000, -1465.000000)">
+            <g id="triptych" transform="translate(0.000000, 1205.000000)">
+                <g id="helix" transform="translate(573.000000, 260.000000)">
+                    <g transform="translate(57.000000, 0.800049)">
+                        <g id="bars" transform="translate(6.000000, 7.000000)" stroke-dasharray="2">
+                            <path d="M28,1 L139.004504,1" id="Path-9" stroke="url(#linearGradient-1)"></path>
+                            <path d="M0.5,36 L168.5,36" id="Path-9-Copy" stroke="url(#linearGradient-2)"></path>
+                            <path d="M28,71 L139.004504,71" id="Path-9-Copy-2" stroke="#EAECEC"></path>
+                            <path d="M57.5,106 L111.5,106" id="Path-9-Copy-3" stroke="#EAECEC"></path>
+                        </g>
+                        <g id="left" transform="translate(82.000000, 0.000000)">
+                            <ellipse id="Oval-4" fill="#EAEBEB" cx="63" cy="8" rx="8" ry="8"></ellipse>
+                            <g id="Oval-4-Copy-3">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-4"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                            </g>
+                            <circle id="Oval-4-Copy-5" fill="#EAEBEB" cx="63" cy="78" r="8"></circle>
+                            <ellipse id="Oval-4-Copy-4" fill="#EAEBEB" cx="35" cy="113" rx="8" ry="8"></ellipse>
+                            <ellipse id="Oval-4-Copy-6" fill="#EAEBEB" cx="8" cy="148" rx="8" ry="8"></ellipse>
+                        </g>
+                        <g id="right" transform="translate(35.500000, 60.500000) scale(-1, 1) translate(-35.500000, -60.500000) ">
+                            <g id="Oval-4-Copy">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-5"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-5"></use>
+                            </g>
+                            <ellipse id="Oval-4-Copy-10" fill="#EAEBEB" cx="63" cy="43.1999512" rx="8" ry="8"></ellipse>
+                            <circle id="Oval-4-Copy-9" fill="#EAEBEB" cx="36" cy="78" r="8"></circle>
+                            <ellipse id="Oval-4-Copy-8" fill="#EAEBEB" cx="8" cy="113" rx="8" ry="8"></ellipse>
+                        </g>
+                    </g>
+                    <g id="helix-copy" transform="translate(57.000000, 175.800049)">
+                        <g id="bars" transform="translate(6.000000, 42.000000)" stroke-dasharray="2">
+                            <path d="M28,1 L139.004504,1" id="Path-9" stroke="url(#linearGradient-6)"></path>
+                            <path d="M0.5,36 L168.5,36" id="Path-9-Copy" stroke="url(#linearGradient-1)"></path>
+                            <path d="M28,71 L139.004504,71" id="Path-9-Copy-2" stroke="#EAECEC"></path>
+                            <path d="M57.5,106 L111.5,106" id="Path-9-Copy-3" stroke="#EAECEC"></path>
+                        </g>
+                        <g id="left" transform="translate(82.000000, 35.000000)">
+                            <g id="Oval-4">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-7"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-7"></use>
+                            </g>
+                            <ellipse id="Oval-4-Copy-3" fill="#EAEBEB" cx="90" cy="43.1999512" rx="8" ry="8"></ellipse>
+                            <circle id="Oval-4-Copy-5" fill="#EAEBEB" cx="63" cy="78" r="8"></circle>
+                            <ellipse id="Oval-4-Copy-4" fill="#EAEBEB" cx="35" cy="113" rx="8" ry="8"></ellipse>
+                            <ellipse id="Oval-4-Copy-6" fill="#EAEBEB" cx="8" cy="148" rx="8" ry="8"></ellipse>
+                        </g>
+                        <g id="right" transform="translate(35.500000, 95.500000) scale(-1, 1) translate(-35.500000, -95.500000) translate(0.000000, 35.000000)">
+                            <ellipse id="Oval-4-Copy" fill="#EAEBEB" cx="36" cy="8" rx="8" ry="8"></ellipse>
+                            <g id="Oval-4-Copy-10">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-8"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-8"></use>
+                            </g>
+                            <ellipse id="Oval-4-Copy-9" fill="#EAEBEB" cx="36" cy="78" rx="8" ry="8"></ellipse>
+                            <circle id="Oval-4-Copy-8" fill="#EAEBEB" cx="8" cy="113" r="8"></circle>
+                        </g>
+                        <g id="Group-8" transform="translate(55.000000, 0.000000)">
+                            <path d="M8.5,8 L62.5,8" id="Path-9-Copy-3" stroke="#EAECEC" stroke-dasharray="2"></path>
+                            <circle id="Oval-4-Copy-4" fill="#EAEBEB" cx="62" cy="8" r="8"></circle>
+                            <circle id="Oval-4-Copy-8" fill="#EAEBEB" cx="8" cy="8" r="8"></circle>
+                        </g>
+                    </g>
+                    <g id="helix-copy-2" transform="translate(57.000000, 385.800049)">
+                        <g id="bars" transform="translate(6.000000, 42.000000)" stroke-dasharray="2">
+                            <path d="M28,1 L139.004504,1" id="Path-9" stroke="#EAECEC"></path>
+                            <path d="M0.5,36 L168.5,36" id="Path-9-Copy" stroke="url(#linearGradient-6)"></path>
+                            <path d="M28,71 L139.004504,71" id="Path-9-Copy-2" stroke="#EAECEC"></path>
+                        </g>
+                        <g id="left" transform="translate(137.000000, 35.000000)">
+                            <ellipse id="Oval-4" fill="#EAEBEB" cx="8" cy="8" rx="8" ry="8"></ellipse>
+                            <g id="Oval-4-Copy-3">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-9"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-9"></use>
+                            </g>
+                            <circle id="Oval-4-Copy-5" fill="#EAEBEB" cx="8" cy="78" r="8"></circle>
+                        </g>
+                        <g id="right" transform="translate(21.500000, 78.000000) scale(-1, 1) translate(-21.500000, -78.000000) translate(0.000000, 35.000000)" fill="#EAEBEB">
+                            <ellipse id="Oval-4-Copy" cx="8" cy="8" rx="8" ry="8"></ellipse>
+                            <ellipse id="Oval-4-Copy-10" cx="35" cy="43.1999512" rx="8" ry="8"></ellipse>
+                            <circle id="Oval-4-Copy-9" cx="8" cy="78" r="8"></circle>
+                        </g>
+                        <g id="Group-8" transform="translate(55.000000, 0.000000)">
+                            <path d="M8.5,8 L62.5,8" id="Path-9-Copy-3" stroke="url(#linearGradient-1)" stroke-dasharray="2"></path>
+                            <ellipse id="Oval-4-Copy-4" fill="#EAEBEB" cx="62" cy="8" rx="8" ry="8"></ellipse>
+                            <g id="Oval-4-Copy-8">
+                                <use fill-opacity="0.100000001" fill="#B2DE3F" xlink:href="#path-10"></use>
+                                <use fill="url(#linearGradient-3)" xlink:href="#path-10"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M64,9 L0,4" id="Path-3" stroke="#BCBCBC"></path>
+                    <path d="M251,30 L296,5" id="Path-4" stroke="#BCBCBC"></path>
+                    <path d="M227,213 L296,194" id="Path-5" stroke="#BCBCBC"></path>
+                    <path d="M248,442 L296,388" id="Path-6" stroke="#BCBCBC"></path>
+                    <path d="M88,392 L0,388" id="Path-7" stroke="#BCBCBC"></path>
+                    <path d="M43,233 L0,198" id="Path-8" stroke="#BCBCBC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

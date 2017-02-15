@@ -22,4 +22,9 @@ productvideo:
   webm: "/img/demo.webm"
 
 thanksdevs: "**Thanks to all our contributors.**Keep shooting for the stars with Netlify CMS."
+
+collab:
+  hook: "Stop fighting clunky tools like Wordpress."
+  body: "Finally, an open-source CMS that brings the ease of WordPress-style editing to the simplicity and speed of static sites. A CMS shouldn’t just favor the editorial workflow - it should seamlessly integrate the roles of developers, writers, and editors with ease."
+  graphicpath: "/img/collab.svg"
 ---

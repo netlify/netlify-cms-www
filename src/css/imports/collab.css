@@ -1,0 +1,18 @@
+.collab {
+
+  h1 {
+    text-align: center;
+    margin-bottom: $large;
+  }
+
+  .collab-graphic {
+    @neat-span-columns 4;
+    @neat-shift 1;
+  }
+
+  p {
+    @neat-span-columns 5;
+    @neat-shift 1;
+    margin-top: $medium;
+  }
+}

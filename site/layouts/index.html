@@ -26,4 +26,16 @@
   </div>
 </section>
 
+<section class="collab container">
+  <h1>{{ .Site.Data.landing.collab.hook | markdownify }}</h1>
+  <div class="row">
+    <div class="collab-graphic">
+      <img src="{{ .Site.Data.landing.collab.graphicpath }}" class="responsive"/>
+    </div>
+    <div class="collab-copy">
+      <p>{{ .Site.Data.landing.collab.body | markdownify }}</p>
+    </div>
+  </div>
+</section>
+
 {{ partial "footer" . }}

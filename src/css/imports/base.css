@@ -131,3 +131,13 @@ ul {
   border: 1px solid white;
   color: white;
 }
+
+pre {
+  border-radius: $borderRadius;
+}
+
+.code,
+code {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 14px;
+}

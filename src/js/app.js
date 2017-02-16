@@ -1,36 +1,78 @@
 // Sticky Nav Functionality in Vanilla JS
 
-function hasClass(el, className) {
-  if (el.classList)
-    return el.classList.contains(className)
-  else
-    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+var header = $("#header");
+
+if ($('.landing.page').length) {
+  window.onscroll = function() {
+
+    var currentWindowPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentWindowPos > 0) {
+      header.addClass('scrolled');
+    } else {
+      header.removeClass('scrolled');
+    }
+  };
 }
 
-function addClass(el, className) {
-  if (el.classList)
-    el.classList.add(className)
-  else if (!hasClass(el, className)) el.className += " " + className
-}
+// Auto Indexing Docs Nav
 
-function removeClass(el, className) {
-  if (el.classList)
-    el.classList.remove(className)
-  else if (hasClass(el, className)) {
-    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
-    el.className=el.className.replace(reg, ' ')
+var indexDocsSubsections = function() {
+  if ($('.docs.page').length) {
+
+    if ($('#docs-content h2').length > 1) {
+      $('<ul class="nav-subsections" id="nav-subsections"></ul>').insertAfter($('#docs-nav .nav-link.active'));
+
+      $('#docs-content h2').each(function() {
+        var sectionTitle = $(this).html(),
+          anchor     = $(this).attr("id");
+
+        $('#nav-subsections').append('<li><a class="subnav-link for-' + anchor + '" href="#' + anchor + '">' + sectionTitle + '</a></li>');
+
+      });
+
+      $.localScroll({
+        offset: -120,
+        duration:200,
+        hash:true
+      });
+    }
+
+    $(window).on('scroll', function(){
+      window.requestAnimationFrame(scrollHandler);
+
+      function scrollHandler() {
+        var scrollTop      = $(window).scrollTop(),
+          windowHeight   = $(window).height(),
+          first        = false,
+          allSubnavLinks = $("#docs-nav .subnav-link");
+
+        $("#docs-content h2").each( function() {
+          var offset   = $(this).offset(),
+            thisLink = '.for-' + $(this).attr("id");
+
+          if (scrollTop <= offset.top && ($(this).height() + offset.top) < (scrollTop + windowHeight) && first == false) {
+            allSubnavLinks.removeClass('active');
+            $(thisLink).addClass('active');
+            first=true;
+          } else {
+            first=false;
+          }
+        });
+      }
+    });
   }
 }
 
-var header = document.getElementById("header");
+indexDocsSubsections();
 
-window.onscroll = function() {
+var docsMobileMenu = function() {
+  if ($('.docs.page').length) {
 
-  var currentWindowPos = document.documentElement.scrollTop || document.body.scrollTop;
-
-  if (currentWindowPos > 0) {
-    addClass(header, 'scrolled');
-  } else {
-    removeClass(header, 'scrolled');
+    $("#mobile-docs-nav").change(function() {
+      window.location = $(this).find("option:selected").val();
+    });
   }
-};
+}
+
+docsMobileMenu();

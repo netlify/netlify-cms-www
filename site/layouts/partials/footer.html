@@ -2,6 +2,12 @@
   <p class="contained">The contents of this website are © 2017 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE" class="text-link">MIT License</a>.</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+{{ if or (eq .Section "docs") (eq .Title "Docs") }}
+  <script src="/jquery.scrollTo.min.js"></script>
+  <script src="/jquery.localScroll.min.js"></script>
+  <script src="/prism.js"></script>
+{{ end }}
 <script src="/app.js"></script>
 </body>
 </html>

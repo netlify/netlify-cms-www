@@ -1,65 +1,67 @@
 {{ partial "header" . }}
 
-<section class="hero">
-  <div class="contained">
+<div class="landing page">
+  <section class="hero">
+    <div class="contained">
 
-    <div class="hero-copy">
-      <h1 class="headline">{{ .Site.Data.landing.hero.headline | markdownify }}</h1>
-      <h2 class="subhead">{{ .Site.Data.landing.hero.subhead | markdownify }}</h2>
-      <a href="{{ .Site.Data.landing.cta.primarycta.link }}" class="btn-primary inverted">{{ .Site.Data.landing.cta.primarycta.copy }}</a>
-      <a href="{{ .Site.Data.landing.cta.secondarycta.link }}" class="btn-secondary inverted">{{ .Site.Data.landing.cta.secondarycta.copy }}</a>
-      <p class="mooseheads">
-        <strong>As seen on...</strong>
-        <img src="/img/smashing-logo.svg"/>
-      </p>
-    </div>
-
-    <div class="hero-graphic">
-      <video autoplay poster="{{ .Site.Data.landing.productvideo.thumb }}">
-        <source src="{{ .Site.Data.landing.productvideo.mp4 }}" type="video/mp4">
-        <source src="{{ .Site.Data.landing.productvideo.ogg }}" type="video/ogg">
-        <source src="{{ .Site.Data.landing.productvideo.webm }}" type="video/webm">
-      </video>
-      <p class="thanks-devs">{{ .Site.Data.landing.thanksdevs | markdownify }}</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="collab">
-  <div class="container">
-    <h1>{{ .Site.Data.landing.collab.hook | markdownify }}</h1>
-    <div class="row">
-      <div class="collab-graphic">
-        <img src="{{ .Site.Data.landing.collab.graphicpath }}" class="responsive"/>
+      <div class="hero-copy">
+        <h1 class="headline">{{ .Site.Data.landing.hero.headline | markdownify }}</h1>
+        <h2 class="subhead">{{ .Site.Data.landing.hero.subhead | markdownify }}</h2>
+        <a href="{{ .Site.Data.landing.cta.primarycta.link }}" class="btn-primary inverted">{{ .Site.Data.landing.cta.primarycta.copy }}</a>
+        <a href="{{ .Site.Data.landing.cta.secondarycta.link }}" class="btn-secondary inverted">{{ .Site.Data.landing.cta.secondarycta.copy }}</a>
+        <p class="mooseheads">
+          <strong>As seen on...</strong>
+          <img src="/img/smashing-logo.svg"/>
+        </p>
       </div>
-      <div class="collab-copy">
-        <p>{{ .Site.Data.landing.collab.body | markdownify }}</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="features">
-  <div class="container">
-    <h1>{{ .Site.Data.landing.featureshook | markdownify }}</h1>
-    {{ $featuresgraphic := .Site.Data.landing.featuresgraphic }}
-    <div class="features-column">
-      {{ range $index, $id := .Site.Data.landing.features }}
-        <div class="feature">
-          <h3>{{ .feature | markdownify }}</h3>
-          <p>{{ .description | markdownify }}</p>
+      <div class="hero-graphic">
+        <video autoplay poster="{{ .Site.Data.landing.productvideo.thumb }}">
+          <source src="{{ .Site.Data.landing.productvideo.mp4 }}" type="video/mp4">
+          <source src="{{ .Site.Data.landing.productvideo.ogg }}" type="video/ogg">
+          <source src="{{ .Site.Data.landing.productvideo.webm }}" type="video/webm">
+        </video>
+        <p class="thanks-devs">{{ .Site.Data.landing.thanksdevs | markdownify }}</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="collab">
+    <div class="container">
+      <h1>{{ .Site.Data.landing.collab.hook | markdownify }}</h1>
+      <div class="row">
+        <div class="collab-graphic">
+          <img src="{{ .Site.Data.landing.collab.graphicpath }}" class="responsive"/>
         </div>
-        {{ if eq $index 2 }}
-          </div>
-          <div class="features-graphic">
-            <img src="{{ $featuresgraphic }}" class="responsive"/>
-          </div>
-          <div class="features-column">
-        {{ end }}
-      {{ end }}
+        <div class="collab-copy">
+          <p>{{ .Site.Data.landing.collab.body | markdownify }}</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h1>{{ .Site.Data.landing.featureshook | markdownify }}</h1>
+      {{ $featuresgraphic := .Site.Data.landing.featuresgraphic }}
+      <div class="features-column">
+        {{ range $index, $id := .Site.Data.landing.features }}
+          <div class="feature">
+            <h3>{{ .feature | markdownify }}</h3>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          {{ if eq $index 2 }}
+            </div>
+            <div class="features-graphic">
+              <img src="{{ $featuresgraphic }}" class="responsive"/>
+            </div>
+            <div class="features-column">
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</div>
 
 {{ partial "footer" . }}

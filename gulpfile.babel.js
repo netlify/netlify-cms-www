@@ -25,7 +25,7 @@ gulp.task("build", ["css", "js", "fonts", "images", "hugo"]);
 gulp.task("build-preview", ["css", "js", "fonts", "images", "hugo-preview"]);
 
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
+  gulp.src("./src/css/**/*.css")
     .pipe(postcss([
       cssImport({from: "./src/css/main.css"}),
       neatgrid(),

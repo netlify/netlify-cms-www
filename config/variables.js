@@ -3,6 +3,7 @@
 module.exports = {
 
   // colors
+  lightestGrey: '#E6E6E6',
   lighterGrey: '#F7F8F8',
   lightGrey: '#F6F6F6',
   grey: '#313D3E',

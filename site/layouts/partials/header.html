@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/main.css"/>
+    {{ if or (eq .Section "docs") (eq .Title "Docs") }}
+      <link rel="stylesheet" href="/css/lib/prism.css"/>
+    {{ end }}
   </head>
   <body>
-    <header id="header">
+    <header id="header" {{ if or (eq .Section "docs") (eq .Title "Docs") }}class="scrolled"{{ end }}>
       <div class="contained">
         <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>
         <a href="/docs">Docs</a>

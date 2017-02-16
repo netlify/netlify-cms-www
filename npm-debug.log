@@ -26,7 +26,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid victor-hugo@1.0.0
 16 verbose cwd /Users/eliwilliamson/repos/netlify-cms-www
-17 error Darwin 16.3.0
+17 error Darwin 16.4.0
 18 error argv "/usr/local/Cellar/node/6.2.1/bin/node" "/usr/local/bin/npm" "start"
 19 error node v6.2.1
 20 error npm  v3.9.3

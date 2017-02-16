@@ -1,15 +1,5 @@
 <footer>
-  <div class="container">
-    <div class="footer-hook">
-      <h1>{{ .Site.Data.global.footer.hook | markdownify }}</h1>
-    </div>
-    <div class="footer-content">
-      <img src="/img/netlify-logo.svg" />
-      <h3>{{ .Site.Data.global.footer.headline | markdownify }}</h3>
-      <p>{{ .Site.Data.global.footer.body | markdownify }}</p>
-      <a class="btn-secondary" href="{{ .Site.Data.global.footer.cta.secondarycta.link }}">{{ .Site.Data.global.footer.cta.secondarycta.copy | markdownify }}</a>
-    </div>
-  </div>
+  <p class="contained">The contents of this website are © 2017 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE" class="text-link">MIT License</a>.</p>
 </footer>
 
 <script src="/app.js"></script>

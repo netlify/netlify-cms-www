@@ -1,82 +1,12 @@
 footer {
-  @neat-row;
-  background: $darkerGrey;
-  background-image: linear-gradient(-17deg, $darkerGrey 17%, $darkGrey 94%);
-  color: white;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
+  background: $lighterGrey;
+  padding: $small 0 20px 0;
 
-  @media screen and (min-width: $tablet) {
-    padding: $large 0;
-  }
-
-  &:before {
-    background: url('/img/bow.svg') no-repeat bottom center;
-    background-size: contain;
-    top: 0;
-    content: '';
-    height: $xl;
-    left: -$xl;
-    position: absolute;
-    right: -$xl;
-    transform: rotate(180deg);
-    width: calc(100% + ($xl * 2));
-    z-index: 3;
-  }
-
-  .footer-hook {
-    margin-top: -$large;
-    padding-top: $large;
-    padding-bottom: $large;
-    position: relative;
-    background-image: linear-gradient(-60deg, $lightGreen 14%, $green 94%);
-
-    @media screen and (min-width: $tablet) {
-      background: none;
-      margin-top: initial;
-      padding-top: initial;
-      padding-bottom: initial;
-      @neat-span-columns 5;
-
-      &:after {
-        background-image: linear-gradient(-60deg, $lightGreen 14%, $green 94%);
-        content: ' ';
-        height: 800px;
-        position: absolute;
-        right: 0;
-        top: -$xl;
-        width: 10000px;
-      }
-    }
-
-    h1 {
-      color: $grey;
-      font-size: 44px;
-      font-weight: $black;
-      line-height: 57px;
-      position: relative;
-      z-index: 2;
-      margin-top: $large;
-    }
-  }
-
-  .footer-content {
-    box-sizing: border-box;
-    padding: $large $small;
-    text-align: left;
-
-    @media screen and (min-width: $tablet) {
-      padding-left: $large;
-      @neat-span-columns 7;
-    }
-
-    img {
-      margin: -$tiny 0 calc($medium * .75) 0;
-
-      @media screen and (min-width: $tablet) {
-        margin-left: -25px;
-      }
-    }
+  p {
+    color: $grey;
+    font-family: $roboto;
+    font-size: 12px;
+    opacity: .5;
+    text-align: center;
   }
 }

@@ -54,7 +54,7 @@ p, ul {
 }
 
 a {
-  color: $darkGreen;
+  color: $grey;
   text-decoration: none;
   font-weight: $bold;
 }

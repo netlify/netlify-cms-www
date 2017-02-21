@@ -1,6 +1,6 @@
 ---
 hero:
-  headline: "The best open-source <span><br></span>CMS for static sites."
+  headline: "Integrate code-free content editing with your existing development workflow"
   subhead: |
     - Create, edit, and review drafts
     - Publish content without writing code
@@ -9,11 +9,8 @@ hero:
 
 cta:
   primarycta:
-    copy: "Get Started Quick"
-    link: "/intro"
-  secondarycta:
-    copy: "Download Now"
-    link: "/download"
+    copy: "Get Started"
+    link: "/docs/quick-start"
 
 productvideo:
   thumbnail: "/img/hero-graphic.jpg"
@@ -31,18 +28,18 @@ collab:
 featureshook: "Designed with developers in mind - it’s in our DNA."
 
 features:
-  - feature: "Easy Installation"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
-  - feature: "Fast Web-based UI"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
-  - feature: "Platform Agnostic"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
-  - feature: "Modern Authentication"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
-  - feature: "Fully Extensible"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
-  - feature: "Flexible Content Types"
-    description: "Vestibulum rutrum quam vitae. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibu."
+  - feature: "Fast, web-based UI"
+    description: "Built with React, featuring rich-text editing, real-time preview, and drag-and-drop media uploads."
+  - feature: "Platform agnostic"
+    description: "Works with most static site generators for sites stored in GitHub."
+  - feature: "Easy installation"
+    description: "Add two files to your site, include or link to the JS, and add your custom confirguration."
+  - feature: "Modern authentication"
+    description: "Connect with Netflify's authentication service or roll your own, using GitHub and JSON web tokens."
+  - feature: "Flexible content types"
+    description: "Specify an unlimited number of content types with custom fields."
+  - feature: "Fully extensible"
+    description: "Create custom-styled previews, UI widgets, and editor plugins."
 
 featuresgraphic: "/img/helix.svg"
 ---

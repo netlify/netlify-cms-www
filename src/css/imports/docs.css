@@ -150,6 +150,10 @@
 		}
 	}
 
+  h2 {
+    font-size: $small;
+  }
+
 	h3 {
 		color: $grey;
 		font-size: 12px;

@@ -126,6 +126,17 @@
 			max-width: 100%;
 			height: auto;
 		}
+
+    table {
+      background: #f7f7f7;
+      border-radius: $borderRadius;
+    }
+
+    p > code {
+      background: $lightestGrey;
+      border-radius: 2px;
+      padding: 2px 6px;
+    }
 	}
 
 	h1,
@@ -138,6 +149,10 @@
 			margin-bottom: 86px;
 		}
 	}
+
+  h2 {
+    font-size: $small;
+  }
 
 	h3 {
 		color: $grey;

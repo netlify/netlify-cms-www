@@ -1,11 +1,11 @@
 ---
 hero:
-  headline: "Integrate code-free content editing with your existing development workflow"
+  headline: "Code-free content editing for your development workflow"
   subhead: |
+    - Completely free and open source
+    - Built in version control with GitHub
     - Create, edit, and review drafts
     - Publish content without writing code
-    - Built in version control with GitHub
-    - Completely free and open source
 
 cta:
   primarycta:

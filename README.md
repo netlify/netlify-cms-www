@@ -1,4 +1,4 @@
-# NetlifyCMS
+# Netlify CMS
 
 We love open-source and it looks like you do too! Contribute by submitting a pull request with your changes.
 

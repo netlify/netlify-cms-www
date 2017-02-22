@@ -2,7 +2,7 @@
 title: Introduction
 position: 0
 ---
-# Introduction
+# Core Concepts
 
 Netlify CMS is a Content Management System for static sites, allowing collaborators to create, edit, review, and publish content without writing code or dealing with version control. It brings the ease of WordPress-style editing to the simplicity and speed of static sites.
 
@@ -14,8 +14,6 @@ At its core, Netlify CMS is an open-source React app that acts as a wrapper for 
 * **Modern authentication** - using GitHub and JSON web tokens
 * **Flexible content types** - specify an unlimited number of content types with custom fields
 * **Fully extensible** - create custom-styled previews, UI widgets, and editor plugins
-
-# Core Concepts
 
 ## The Admin Interface
 

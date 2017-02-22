@@ -10,14 +10,14 @@ The Netlify CMS exposes an `window.CMS` global object that you can use to regist
 * **registerWidget** lets you register a custom widget.
 * **registerEditorComponent** lets you add a block component to the Markdown editor
 
-**Writing React Components inline**
+### Writing React Components inline
 
 Both registerPreviewTemplate and registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
 
 Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, Netlify CMS exposes two React constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
 
-## `registerPreviewStyle`
+## registerPreviewStyle
 
 Register a custom stylesheet to use on the preview pane.
 
@@ -32,7 +32,7 @@ Register a custom stylesheet to use on the preview pane.
 `CMS.registerPreviewStyle("/example.css");`
 
 
-## `registerPreviewTemplate`
+## registerPreviewTemplate
 
 Registers a template for a collection.
 
@@ -86,7 +86,7 @@ export default class ArticlePreview extends React.Component {
 }
 ```
 
-## `registerWidget`
+## registerWidget
 
 lets you register a custom widget.
 
@@ -120,7 +120,7 @@ CMS.registerWidget('categories', CategoriesControl);
 </script>
 ```
 
-## `registerEditorComponent`
+## registerEditorComponent
 
 lets your register a block level component for the Markdown editor
 

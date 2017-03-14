@@ -3,45 +3,68 @@ title: Customization
 position: '3'
 ---
 
-# Customizing Netlify CMS
+## Customizing Preview Pane
 
-    The Netlify CMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available methods are:
-    
-    * **registerPreviewStyle** Register a custom stylesheet to use on the preview pane.
-    * **registerPreviewTemplate** Registers a template for a collection.
-    
-    **Writing React Components inline**
-    
-    The registerPreviewTemplate requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
-    
-    Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, Netlify CMS exposes two React constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
-    
-    
-    ## `registerPreviewStyle`
-    
-    Register a custom stylesheet to use on the preview pane.
-    
-    `CMS.registerPreviewStyle(file);`
-    
-    **Params:**
-    
-    * file: css file path.
-    
-    **Example:**
-    
-    `CMS.registerPreviewStyle("/example.css");`
-    
-    
-    ## `registerPreviewTemplate`
-    
-    Registers a template for a collection.
-    
-    `CMS.registerPreviewTemplate(collection, react_component);`
-    
-    **React Component Props:**
-    
-    * collection: The name of the collection which this preview component will be used for.
-    * react_component: A React component that renders the collection data. Four props will be passed to your component during render:
+The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available methods are:
+
+* **registerPreviewStyle** Register a custom stylesheet to use on the preview pane.
+* **registerPreviewTemplate** Registers a template for a collection.
+
+Explore the [NetlifyCMS GitHub example](https://github.com/netlify/netlify-cms/blob/9ced3f16c8bcc3d1a36773b126842d023c589eaf/example/index.html#L90-L91) has a working example to review on GitHub.
+
+### Writing React Components inline
+
+The registerPreviewTemplate requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
+
+Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
+
+## `registerPreviewStyle`
+
+Register a custom stylesheet to use on the preview pane.
+
+```js
+CMS.registerPreviewStyle(file);
+```
+
+**Params:**
+
+*file: css file path
+**Example:**
+```html
+// index.html
+<script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
+<script>
+  CMS.registerPreviewStyle("/example.css");
+</script>
+```
+```css
+/* example.css */
+
+html,
+body {
+  color: #444;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+
+```
+
+
+## `registerPreviewTemplate`
+
+Registers a template for a collection.
+
+`CMS.registerPreviewTemplate(collection, react_component);`
+
+**Params:**
+
+* collection: The name of the collection which this preview component will be used for.
+* react_component: A React component that renders the collection data. Four props will be passed to your component during render:
       * entry: Immutable collection containing the entry data.
       * widgetFor: Returns the appropriate widget preview component for a given field.
       * [widgetsFor](#lists-and-objects): Returns an array of objects with widgets and associated field data. For use with list and object type entries.
@@ -74,7 +97,7 @@ position: '3'
     nested fields is facilitated through the `widgetsFor` function, which is passed to the preview
     template component during render.
     
-    **Note**: as is often the case with the Netlify CMS API, arrays and objects are created with
+    **Note**: as is often the case with the NetlifyCMS API, arrays and objects are created with
     Immutable.js. If some of the methods that we use are unfamiliar, such as `getIn`, check out
     [their docs](https://facebook.github.io/immutable-js/docs/#/) to get a better understanding.
     

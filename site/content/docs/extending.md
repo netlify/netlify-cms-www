@@ -5,7 +5,7 @@ position: 4
 
 ## Extending With Widgets
 
-The Netlify CMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available methods are:
+The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available widger extension methods are:
 
 * **registerWidget** lets you register a custom widget.
 * **registerEditorComponent** lets you add a block component to the Markdown editor
@@ -14,7 +14,7 @@ The Netlify CMS exposes an `window.CMS` global object that you can use to regist
 
 The registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
 
-Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, Netlify CMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
+Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
 ## registerWidget
 
@@ -34,6 +34,7 @@ CMS.registerWidget(field, control, \[preview\])
 
 **Example:**
 ```html
+<script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
 <script>
 var CategoriesControl = createClass({
   handleChange: function(e) {
@@ -65,7 +66,7 @@ CMS.registerEditorComponent(definition)
 **Example:**
 
 ```html
-<script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
+<script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
 <script>
 CMS.registerEditorComponent({
   // Internal id of the component

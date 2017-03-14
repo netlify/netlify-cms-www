@@ -5,18 +5,16 @@ position: 3
 
 ## Customizing Preview Pane
 
-The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available methods are:
+The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available customization methods are:
 
 * **registerPreviewStyle** Register a custom stylesheet to use on the preview pane.
 * **registerPreviewTemplate** Registers a template for a collection.
 
 Explore the [NetlifyCMS GitHub example](https://github.com/netlify/netlify-cms/blob/9ced3f16c8bcc3d1a36773b126842d023c589eaf/example/index.html#L90-L91) has a working example to review on GitHub.
 
-### Writing React Components inline
+### React Components inline interaction
 
-The registerPreviewTemplate requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
-
-Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
+NetlifyCMS is a collection of React components and exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
 ## `registerPreviewStyle`
 
@@ -29,10 +27,11 @@ CMS.registerPreviewStyle(file);
 **Params:**
 
 * **file:** css file path
+
 **Example:**
 ```html
 // index.html
-<script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
+<script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
 <script>
   CMS.registerPreviewStyle("/example.css");
 </script>
@@ -63,16 +62,17 @@ Registers a template for a collection.
 
 **Params:**
 
-* **collection:** The name of the collection which this preview component will be used for.
-* **react_component:** A React component that renders the collection data. Four props will be passed to your component during render:
-      * **entry:** Immutable collection containing the entry data.
-      * **widgetFor:** Returns the appropriate widget preview component for a given field.
-      * **[widgetsFor](#lists-and-objects):** Returns an array of objects with widgets and associated field data. For use with list and object type entries.
-      * **getAsset:** Returns the correct filePath or in-memory preview for uploaded images.
+* collection: The name of the collection which this preview component will be used for.
+* react_component: A React component that renders the collection data. Four props will be passed to your component during render:
+      * entry: Immutable collection containing the entry data.
+      * widgetFor: Returns the appropriate widget preview component for a given field.
+      * [widgetsFor](#lists-and-objects): Returns an array of objects with widgets and associated field data. For use with list and object type entries.
+      * getAsset: Returns the correct filePath or in-memory preview for uploaded images.
     
     **Example:**
     
     ```html
+    <script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
     <script>
     var PostPreview = createClass({
       render: function() {

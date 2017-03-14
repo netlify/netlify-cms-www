@@ -16,9 +16,9 @@ The registerWidget requires you to provide a React component. If you have a buil
 
 Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
-## registerWidget
+## `registerWidget`
 
-lets you register a custom widget.
+Register a custom widget.
 
 ```js
 CMS.registerWidget(field, control, \[preview\])
@@ -52,9 +52,9 @@ CMS.registerWidget('categories', CategoriesControl);
 </script>
 ```
 
-## registerEditorComponent
+## `registerEditorComponent`
 
-lets your register a block level component for the Markdown editor
+Register a block level component for the Markdown editor
 
     CMS.registerEditorComponent(definition)
 

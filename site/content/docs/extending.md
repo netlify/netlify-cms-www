@@ -99,5 +99,5 @@ CMS.registerEditorComponent({
 
 **Result:**
 
-![youtube-widget](/site/static/img/Screenshot 2017-03-14 14.49.08.png)
+![youtube-widget](/site/static/img/youtube-widget.png)
 

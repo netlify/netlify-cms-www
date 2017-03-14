@@ -1,6 +1,6 @@
 ---
 title: Editorial Workflow
-position: 3
+position: 5
 ---
 # Editorial Workflow
 

@@ -1,6 +1,6 @@
 ---
 title: Validation
-position: 4
+position: 6
 ---
 # Collection Field Validation
 

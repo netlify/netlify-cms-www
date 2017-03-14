@@ -1,6 +1,6 @@
 ---
 title: Customization
-position: '3'
+position: 3
 ---
 
 ## Customizing Preview Pane
@@ -28,7 +28,7 @@ CMS.registerPreviewStyle(file);
 
 **Params:**
 
-*file: css file path
+* **file:** css file path
 **Example:**
 ```html
 // index.html
@@ -63,12 +63,12 @@ Registers a template for a collection.
 
 **Params:**
 
-* collection: The name of the collection which this preview component will be used for.
-* react_component: A React component that renders the collection data. Four props will be passed to your component during render:
-      * entry: Immutable collection containing the entry data.
-      * widgetFor: Returns the appropriate widget preview component for a given field.
-      * [widgetsFor](#lists-and-objects): Returns an array of objects with widgets and associated field data. For use with list and object type entries.
-      * getAsset: Returns the correct filePath or in-memory preview for uploaded images.
+* **collection:** The name of the collection which this preview component will be used for.
+* **react_component:** A React component that renders the collection data. Four props will be passed to your component during render:
+      * **entry:** Immutable collection containing the entry data.
+      * **widgetFor:** Returns the appropriate widget preview component for a given field.
+      * **[widgetsFor](#lists-and-objects):** Returns an array of objects with widgets and associated field data. For use with list and object type entries.
+      * **getAsset:** Returns the correct filePath or in-memory preview for uploaded images.
     
     **Example:**
     

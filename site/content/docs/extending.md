@@ -12,7 +12,7 @@ The NetlifyCMS exposes an `window.CMS` global object that you can use to registe
 
 ### Writing React Components inline
 
-The registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
+The registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate
 
 Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
@@ -33,6 +33,7 @@ CMS.registerWidget(field, control, \[preview\])
 * **preview (optional):** A React component that renders the preview of how the content will look. A `value` prop will be passed to this component.
 
 **Example:**
+
 ```html
 <script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
 <script>
@@ -55,9 +56,7 @@ CMS.registerWidget('categories', CategoriesControl);
 
 lets your register a block level component for the Markdown editor
 
-```js
-CMS.registerEditorComponent(definition)
-```
+    CMS.registerEditorComponent(definition)
 
 **Params**
 
@@ -97,3 +96,8 @@ CMS.registerEditorComponent({
 });
 </script>
 ```
+
+**Result:**
+
+![youtube-widget](/site/static/img/Screenshot 2017-03-14 14.49.08.png)
+

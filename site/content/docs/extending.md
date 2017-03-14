@@ -20,7 +20,9 @@ Although possible, it may be cumbersome or even impractical to add a React build
 
 lets you register a custom widget.
 
-    CMS.registerWidget(field, control, \[preview\])
+```js
+CMS.registerWidget(field, control, \[preview\])
+```
 
 **Params:**
 
@@ -32,20 +34,22 @@ lets you register a custom widget.
 
 **Example:**
 
-    <script>
-    var CategoriesControl = createClass({
-      handleChange: function(e) {
-        this.props.onChange(e.target.value.split(',').map((e) => e.trim()));
-      },
-    
-      render: function() {
-        var value = this.props.value;
-        return h('input', { type: 'text', value: value ? value.join(', ') : '', onChange: this.handleChange });
-      }
-    });
-    
-    CMS.registerWidget('categories', CategoriesControl);
-    </script>
+```html
+<script>
+var CategoriesControl = createClass({
+  handleChange: function(e) {
+    this.props.onChange(e.target.value.split(',').map((e) => e.trim()));
+  },
+
+  render: function() {
+    var value = this.props.value;
+    return h('input', { type: 'text', value: value ? value.join(', ') : '', onChange: this.handleChange });
+  }
+});
+
+CMS.registerWidget('categories', CategoriesControl);
+</script>
+```
 
 ## registerEditorComponent
 
@@ -59,36 +63,38 @@ lets your register a block level component for the Markdown editor
 
 **Example:**
 
-    <script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
-    <script>
-    CMS.registerEditorComponent({
-      // Internal id of the component
-      id: "youtube",
-      // Visible label
-      label: "Youtube",
-      // Fields the user need to fill out when adding an instance of the component
-      fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
-      // Pattern to identify a block as being an instance of this component
-      pattern: youtube (\S+)\s,
-      // Function to extract data elements from the regexp match
-      fromBlock: function(match) {
-        return {
-          id: match[1]
-        };
-      },
-      // Function to create a text block from an instance of this component
-      toBlock: function(obj) {
-        return 'youtube ' + obj.id;
-      },
-      // Preview output for this component. Can either be a string or a React component
-      // (Component gives better render performance)
-      toPreview: function(obj) {
-        return (
-          '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
-        );
-      }
-    });
-    </script>
+```html
+<script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
+<script>
+CMS.registerEditorComponent({
+  // Internal id of the component
+  id: "youtube",
+  // Visible label
+  label: "Youtube",
+  // Fields the user need to fill out when adding an instance of the component
+  fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
+  // Pattern to identify a block as being an instance of this component
+  pattern: youtube (\S+)\s,
+  // Function to extract data elements from the regexp match
+  fromBlock: function(match) {
+    return {
+      id: match[1]
+    };
+  },
+  // Function to create a text block from an instance of this component
+  toBlock: function(obj) {
+    return 'youtube ' + obj.id;
+  },
+  // Preview output for this component. Can either be a string or a React component
+  // (Component gives better render performance)
+  toPreview: function(obj) {
+    return (
+      '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
+    );
+  }
+});
+</script>
+```
 
 **Result:**
 

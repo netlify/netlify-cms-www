@@ -99,5 +99,5 @@ CMS.registerEditorComponent({
 
 **Result:**
 
-![youtube-widget](/site/static/img/youtube-widget.png)
+![youtube-widget](/img/youtube-widget.png)
 

@@ -40,6 +40,7 @@
 
   .headline {
     margin-top: -12px;
+    max-width: 400px;
 
     @media screen and (min-width: $mobile) {
       text-align: left;
@@ -61,15 +62,23 @@
 
     @media screen and (min-width: $mobile) {
       display: block;
-      margin: $medium 0;
+      margin: $medium 0 $small 0;
     }
   }
 
-  .btn-primary {
-    display: block;
+  .ctas {
+    margin-bottom: $small;
+    text-align: left;
 
-    @media screen and (min-width: $tablet) {
-      display: inline-block;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $green;
+      font-weight: $semibold;
     }
   }
 
@@ -113,10 +122,11 @@
       content: '•••';
       display: block;
       font-size: $small;
-      line-height: 22px;
       height: $small;
-      width: 100%;
+      line-height: 22px;
       padding-left: 6px;
+      text-align: left;
+      width: 100%;
     }
 
     video {

@@ -7,7 +7,7 @@
       <div class="hero-copy">
         <h1 class="headline">{{ .Site.Data.landing.hero.headline | markdownify }}</h1>
         <h2 class="subhead">{{ .Site.Data.landing.hero.subhead | markdownify }}</h2>
-        <a href="{{ .Site.Data.landing.cta.primarycta.link }}" class="btn-primary inverted">{{ .Site.Data.landing.cta.primarycta.copy }}</a>
+        <h3 class="ctas">{{ .Site.Data.landing.hero.ctas | markdownify }}</h3>
         <p class="mooseheads">
           <strong>As seen on...</strong>
           <img src="/img/smashing-logo.svg"/>

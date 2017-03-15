@@ -1,17 +1,15 @@
 ---
 hero:
-  headline: "Code-free content editing for your development workflow"
+  headline: An open-source CMS for your Git workflow
   subhead: |
-    - Completely free and open source
-    - Built in version control with GitHub
-    - Create, edit, and review drafts
-    - Publish content without writing code
-
-cta:
-  primarycta:
-    copy: "Get Started"
-    link: "/docs/quick-start"
-
+    - Content management in a single-page app
+    - Built in React with extensible components
+    - Works with any build tool
+    - Adaptable to any site generator
+  ctas: |
+    - [Install on your site →](/docs/quick-start)
+    - [Write content →](/docs/editorial_workflow)
+    - [Become a Contributor →](https://github.com/netlify/netlify-cms)
 productvideo:
   thumbnail: "/img/hero-graphic.jpg"
   mp4: "/img/demo.mp4"

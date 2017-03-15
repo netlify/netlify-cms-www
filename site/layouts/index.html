@@ -61,6 +61,13 @@
       </div>
     </div>
   </section>
+
+  <section class="inspiration">
+    <div class="container">
+      <h1>Our Inspiration</h1>
+      <p>{{ .Site.Data.landing.inspiration | markdownify }}</p>
+    </div>
+  </section>
 </div>
 
 {{ partial "footer" . }}

@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-position: 1
+position: 2
 ---
 # Quick Start
 
@@ -88,7 +88,7 @@ backend:
 This names GitHub as the authentication provider, points to the repo location on github.com, and declares the branch where you want to merge changes. If you leave out the `branch` declaration, it will default to `master`.
 
 ### Editorial Workflow
-By default, saving a post in the CMS interface will push a commit directly to the branch specified in `backend`. However, you also have the option to enable the [Editorial Workflow](editorial_workflow.md), which adds an interface for drafting, reviewing, and approving posts. To do this, simply add this line to your `config.yml`:
+By default, saving a post in the CMS interface will push a commit directly to the branch specified in `backend`. However, you also have the option to enable the [Editorial Workflow](/docs/editorial-workflow), which adds an interface for drafting, reviewing, and approving posts. To do this, simply add this line to your `config.yml`:
 
 ``` yaml
 publish_mode: editorial_workflow

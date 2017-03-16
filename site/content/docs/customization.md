@@ -1,9 +1,9 @@
 ---
-title: Customization
-position: 3
+title: Custom Previews
+position: 5
 ---
 
-## Customizing Preview Pane
+## Customizing the Preview Pane
 
 The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available customization methods are:
 

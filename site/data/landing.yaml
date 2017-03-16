@@ -1,17 +1,15 @@
 ---
 hero:
-  headline: "Code-free content editing for your development workflow"
+  headline: An open-source CMS for your Git workflow
   subhead: |
-    - Completely free and open source
-    - Built in version control with GitHub
-    - Create, edit, and review drafts
-    - Publish content without writing code
-
-cta:
-  primarycta:
-    copy: "Get Started"
-    link: "/docs/quick-start"
-
+    - Content management in a single-page app
+    - Built in React.js with extensible components
+    - Integrate with any build tool
+    - Plug in to any static site generator
+  ctas: |
+    - [Install on your site →](/docs/quick-start)
+    - [Write content →](/docs/editorial_workflow)
+    - [Become a Contributor →](https://github.com/netlify/netlify-cms)
 productvideo:
   thumbnail: "/img/hero-graphic.jpg"
   mp4: "/img/demo.mp4"
@@ -21,8 +19,8 @@ productvideo:
 thanksdevs: "**Thanks to all our contributors.**Keep shooting for the stars with Netlify CMS."
 
 collab:
-  hook: "Stop fighting clunky tools like Wordpress."
-  body: "Finally, an open-source CMS that brings the ease of WordPress-style editing to the simplicity and speed of static sites. A CMS shouldn’t just favor the editorial workflow - it should seamlessly integrate the roles of developers, writers, and editors with ease."
+  hook: "Integrate the roles of developers, writers, and editors."
+  body: "Writers can focus on writing. Editors can approve content and publish with ease. Developers can use their favorite tools and libraries. **Netlify CMS keeps all of their contributions together, in Git.**"
   graphicpath: "/img/collab.svg"
 
 featureshook: "Designed with developers in mind - it’s in our DNA."
@@ -42,4 +40,13 @@ features:
     description: "Create custom-styled previews, UI widgets, and editor plugins."
 
 featuresgraphic: "/img/helix.svg"
+
+inspiration: |
+  Netlify CMS is part of a long evolution in content management for the web. Even in the budding realm of the [JAMstack](https://www.jamstack.org) and [static site generators](https://www.staticgen.com), developers have a variety [“headless” CMS](http://www.headlesscms.org) options to choose from.
+
+  Proprietary services like Contentful and DatoCMS provide the ease and polish of a concierge provider, while simple open source projects like Prose and Google Drive CMS provide targeted functionality for limited use cases. We love that these other projects help advance the modern web, and we believe there will always be a place for them in the JAMstack ecosystem.
+
+  With Netlify CMS, we hope to carve a different niche. We aim to do for the JAMstack what WordPress did for dynamic sites back in the day. In other words, we want to build a CMS that is open-source but fully-featured and production-ready, that’s as easy to customize as it is to use, and that developers and content editors can build a community around.
+
+  [Help us make it happen!](https://github.com/netlify/netlify-cms)
 ---

@@ -6,7 +6,7 @@
   margin: 0 auto $medium auto;
 
   @media screen and (min-width: $mobile) {
-    margin: 0 auto $xl auto;
+    margin: 0 auto $large auto;
     padding-top: calc($xl * 1.2);
   }
 

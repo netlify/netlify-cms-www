@@ -6,10 +6,17 @@ body {
   margin: 0;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   @media screen and (min-width: $tablet) {
     text-align: left;
   }
+}
+
+.page {
+  flex-grow: 1;
 }
 
 h1 {

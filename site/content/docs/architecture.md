@@ -1,6 +1,6 @@
 ---
 title: Architecture
-position: '6'
+position: '7'
 ---
 
 # Technical Architecture

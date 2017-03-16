@@ -1,109 +1,41 @@
 ---
 title: Extending
-position: 5
+position: 4
 ---
-# Extending Netlify CMS
-The Netlify CMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available methods are:
 
-* **registerPreviewStyle** Register a custom stylesheet to use on the preview pane.
-* **registerPreviewTemplate** Registers a template for a collection.
+## Extending With Widgets
+
+The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available widger extension methods are:
+
 * **registerWidget** lets you register a custom widget.
 * **registerEditorComponent** lets you add a block component to the Markdown editor
 
 ### Writing React Components inline
 
-Both registerPreviewTemplate and registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate webpack and Babel for a complete React build flow.
+The registerWidget requires you to provide a React component. If you have a build process in place for your project, it is possible to integrate
 
-Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, Netlify CMS exposes two React constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
+Although possible, it may be cumbersome or even impractical to add a React build phase. For this reason, NetlifyCMS exposes two constructs globally to allow you to create components inline: ‘createClass’ and ‘h’ (alias for React.createElement).
 
+## `registerWidget`
 
-## registerPreviewStyle
-
-Register a custom stylesheet to use on the preview pane.
-
-`CMS.registerPreviewStyle(file);`
-
-**Params:**
-
-* file: css file path.
-
-**Example:**
-
-`CMS.registerPreviewStyle("/example.css");`
-
-
-## registerPreviewTemplate
-
-Registers a template for a collection.
-
-`CMS.registerPreviewTemplate(collection, react_component);`
-
-**React Component Props:**
-
-* collection: The name of the collection which this preview component will be used for.
-* react_component: A React component that renders the collection data. Three props will be passed to your component during render:
-  * entry: Immutable collection containing the entry data.
-  * widgetFor: Returns the appropriate widget preview component for a given field.
-  * getAsset: Returns the correct filePath or in-memory preview for uploaded images.
-
-**Example:**
-
-```html
-<script>
-var PostPreview = createClass({
-  render: function() {
-    var entry = this.props.entry;
-    var image = entry.getIn(['data', 'image']);
-    var bg = this.props.getAsset(image);
-    return h('div', {},
-      h('h1', {}, entry.getIn(['data', 'title'])),
-      h('img', {src: bg.toString()}),
-      h('div', {"className": "text"}, this.props.widgetFor('body'))
-    );
-  }
-});
-
-CMS.registerPreviewTemplate("posts", PostPreview);
-</script>
-```
-
-### Accessing Metadata
-Preview Components also receive an additional prop: `fieldsMetaData`. It contains aditional information (besides the plain plain textual value of each field) that can be useful for preview purposes.
-
-For example, the Relation widget passes the whole selected relation data in fieldsMetaData.
+Register a custom widget.
 
 ```js
-export default class ArticlePreview extends React.Component {
-  render() {
-    const {entry, fieldsMetaData} = this.props;
-    const author = fieldsMetaData.getIn(['authors', data.author]);
-
-    return <article>
-      <h2>{ entry.getIn(['data', 'title']) }</h2>
-      {author && <AuthorBio author={author.toJS()}/>}
-    </article>
-  }
-}
+CMS.registerWidget(field, control, \[preview\])
 ```
-
-## registerWidget
-
-lets you register a custom widget.
-
-`CMS.registerWidget(field, control, [preview])`
 
 **Params:**
 
-* field: The field type which this widget will be used for.
-* control: A React component that renders the editing interface for this field. Two props will be passed:
-  * value: The current value for this field.
-  * onChange: Callback function to update the field value.
-* preview (optional): A React component that renders the preview of how the content will look. A `value` prop will be passed to this component.
-
+* **field:** The field type which this widget will be used for.
+* **control:** A React component that renders the editing interface for this field. Two props will be passed:
+  * **value:** The current value for this field.
+  * **onChange:** Callback function to update the field value.
+* **preview (optional):** A React component that renders the preview of how the content will look. A `value` prop will be passed to this component.
 
 **Example:**
 
 ```html
+<script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
 <script>
 var CategoriesControl = createClass({
   handleChange: function(e) {
@@ -120,19 +52,21 @@ CMS.registerWidget('categories', CategoriesControl);
 </script>
 ```
 
-## registerEditorComponent
+## `registerEditorComponent`
 
-lets your register a block level component for the Markdown editor
+Register a block level component for the Markdown editor
 
-`CMS.registerEditorComponent(definition)`
+    CMS.registerEditorComponent(definition)
 
 **Params**
 
-* definition: The component definition, must specify: id, label, fields, patterns, fromBlock, toBlock, toPreview
+* **definition:** The component definition, must specify: id, label, fields, patterns, fromBlock, toBlock, toPreview
 
 **Example:**
 
-```js
+```html
+<script src="https://unpkg.com/netlify-cms@^0.x/dist/cms.js"></script>
+<script>
 CMS.registerEditorComponent({
   // Internal id of the component
   id: "youtube",
@@ -160,4 +94,10 @@ CMS.registerEditorComponent({
     );
   }
 });
+</script>
 ```
+
+**Result:**
+
+![youtube-widget](/img/youtube-widget.png)
+

@@ -7,9 +7,9 @@ hero:
     - Integrate with any build tool
     - Plug in to any static site generator
   ctas: |
-    - [Install on your site →](/docs/quick-start)
-    - [Write content →](/docs/editorial_workflow)
-    - [Become a Contributor →](https://github.com/netlify/netlify-cms)
+    - [Find out more →](/docs/intro)
+    - [Try it out →](/docs/test-drive)
+    - [Make it better →](/docs/contributor-guide)
 productvideo:
   thumbnail: "/img/hero-graphic.jpg"
   mp4: "/img/demo.mp4"
@@ -48,5 +48,5 @@ inspiration: |
 
   With Netlify CMS, we hope to carve a different niche. We aim to do for the JAMstack what WordPress did for dynamic sites back in the day. In other words, we want to build a CMS that is open-source but fully-featured and production-ready, that’s as easy to customize as it is to use, and that developers and content editors can build a community around.
 
-  [Help us make it happen!](https://github.com/netlify/netlify-cms)
+  [Help us make it happen!](/docs/contributor-guide)
 ---

@@ -1,6 +1,6 @@
 ---
-title: Extending
-position: 4
+title: Extending Widgets
+position: 6
 ---
 
 ## Extending With Widgets

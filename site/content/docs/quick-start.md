@@ -142,9 +142,8 @@ Widget | UI | Data Type --- | --- | --- `string` | text input | string `datetime
 Based on this example, you can go through the post types in your site and add the appropriate settings to your `config.yml` file. Each post type should be listed as a separate node under the `collections` field.
 
 ## Accessing the App
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9WWapoAChcM" frameborder="0" allowfullscreen></iframe>
 
 With your configuration complete, it's time to try it out! Go to `yoursite.com/admin` and complete the login prompt to access the admin interface. To add users, simply add them as collaborators on the GitHub repo.
 
 Happy posting!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9WWapoAChcM" frameborder="0" allowfullscreen></iframe>

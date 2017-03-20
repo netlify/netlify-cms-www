@@ -31,7 +31,7 @@ features:
   - feature: "Platform agnostic"
     description: "Works with most static site generators for sites stored in GitHub."
   - feature: "Easy installation"
-    description: "Add two files to your site, include or link to the JS, and add your custom confirguration."
+    description: "Add two files to your site, include or link to the JS, and add your custom configuration."
   - feature: "Modern authentication"
     description: "Connect with Netflify's authentication service or roll your own, using GitHub and JSON web tokens."
   - feature: "Flexible content types"

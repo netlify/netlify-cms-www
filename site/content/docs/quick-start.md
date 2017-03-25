@@ -13,7 +13,7 @@ Netlify CMS relies on the GitHub API for managing files, so you'll need to have 
 
 ### Hosting with Netlify
 
-In order to use Nelify's authentication provider service, you'll need to connect your site repo with Netlify. Netlify has published a general [Step-by-Step Guide](https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/) for this, along with detailed guides for many popular static site generators, including [Jekyll](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/), [Hugo](https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-hugo-on-netlify/), [Hexo](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/), [Middleman](https://www.netlify.com/blog/2015/10/01/a-step-by-step-guide-middleman-on-netlify/), and more.
+In order to use Nelify's authentication provider service, you'll need to connect your site repo with Netlify. Netlify has published a general [Step-by-Step Guide](https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/) for this, along with detailed guides for many popular static site generators, including [Jekyll](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/), [Hugo](https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-victor-hugo-on-netlify/), [Hexo](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/), [Middleman](https://www.netlify.com/blog/2015/10/01/a-step-by-step-guide-middleman-on-netlify/), and more.
 
 ### Authenticating with GitHub
 
@@ -137,11 +137,12 @@ Let's break that down: <table> <tr> <td><code>name</code></td> <td>Post type ide
 
 As described above, the `widget` property specifies a built-in or custom UI widget for a given field. The first field in the example, `layout`, uses a `hidden` widget. This widget will not show in the editor UI, but will be saved with the `default` value (assuming it's been set) in the document front matter. The rest of the widgets work as follows:
 
-Widget | UI | Data Type --- | --- | --- `string` | text input | string `datetime` | date picker widget | ISO date string `image` | file picker widget with drag-and-drop | file path saved as string, image uploaded to media folder `number` | text input with `\+` and `-` buttons | number `markdown` | rich text editor with raw option | markdown-formatted string
+Widget | UI | Data Type --- | --- | --- `string` | text input | string `datetime` | date picker widget | ISO date string `image` | file picker widget with drag-and-drop | file path saved as string, image uploaded to media folder `number` | text input with `\\\\\\\+` and `-` buttons | number `markdown` | rich text editor with raw option | markdown-formatted string
 
 Based on this example, you can go through the post types in your site and add the appropriate settings to your `config.yml` file. Each post type should be listed as a separate node under the `collections` field.
 
 ## Accessing the App
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9WWapoAChcM" frameborder="0" allowfullscreen></iframe>
 
 With your configuration complete, it's time to try it out! Go to `yoursite.com/admin` and complete the login prompt to access the admin interface. To add users, simply add them as collaborators on the GitHub repo.

@@ -21,8 +21,17 @@
     <header id="header" {{ if or (eq .Section "docs") (eq .Title "Docs") }}class="scrolled"{{ end }}>
       <div class="contained">
         <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>
-        <input class="utility-input algolia-search"/>
         <a href="/docs">Docs</a>
-        <a href="https://github.com/netlify/netlify-cms" class="small"><img src="/img/github.svg"/></a>
+        <a class="utility-input">
+          <button id="search-button" class="search-button" disabled>
+            <div id="search-icon" class="search-icon">
+              <div class="search-icon-circle"></div>
+              <div class="search-icon-rectangle right"></div>
+              <div class="search-icon-rectangle left"></div>
+            </div>
+          </button>
+        <input placeholder="Search the docs" class="algolia-search"/>
+        </a>
+        <a href="https://github.com/netlify/netlify-cms" class="btn-secondary small"> Fork me on <img src="/img/github.svg"/></a>
       </div>
     </header>

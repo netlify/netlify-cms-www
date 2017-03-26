@@ -76,3 +76,12 @@ var docsMobileMenu = function() {
 }
 
 docsMobileMenu();
+
+// search
+$('#search-button').click(function() {
+  console.log("clicked")
+  $('.search-icon').toggleClass('active');
+  $('.algolia-search').toggleClass('closed');
+});
+
+

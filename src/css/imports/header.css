@@ -25,6 +25,7 @@ header {
     color: white;
     display: inline-block;
     vertical-align: middle;
+    margin-left: $micro;
 
     &:not(:first-child):not(:last-child) {
       display: none;
@@ -33,14 +34,75 @@ header {
         display: initial;
       }
     }
+  }
 
-    &:last-child {
-      vertical-align: middle;
-      padding-bottom: 10px;
+  input {
+    display: block;
+    padding: $micro;
+    padding-left: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $lightestGrey;
+    border-radius: 0;
+    appearance: none;
+    background: none;
+    color: $lightGrey;
+    display: block;
+    font-size: $tiny;
+    font-weight: $regular;
+    height: $medium;
+    padding-left: 0;
+    -webkit-appearance: none;
+    width: 100%;
 
-      @media screen and (min-width: $mobile) {
-        margin-left: 19px;
+    &:focus {
+      outline: none;
+
+      ~ .bar {
+        &::before,
+        &::after {
+          width: 50%;
+        }
       }
+
+      ~ .button-submit {
+        margin-top: -35px;
+      }
+    }
+
+  }
+
+  .utility-input {
+    display: block;
+    padding: 0 $micro;
+    white: 168px;
+    width: auto;
+    border: 2px solid #e8eaeb;
+    border-radius: 4px;
+    background: none;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .2s ease-in-out;
+
+    &:focus,
+    &:active {
+      border-color: #C9FA4B;
+      outline-style: none;
+    }
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder  {
+      font-size: $tiny;
+      font-weight: $semibold;
+      text-align: left;
+      text-decoration: none;
+      line-height: $small;
     }
   }
 

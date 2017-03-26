@@ -196,7 +196,6 @@ header {
 
     &:focus,
     &:active {
-      border-color: #C9FA4B;
       outline-style: none;
     }
 

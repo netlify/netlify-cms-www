@@ -2,6 +2,7 @@
 title: Validation
 position: 7
 ---
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/validation.md) -->
 # Collection Field Validation
 
 ## Available validations to use on config.yaml:
@@ -56,3 +57,5 @@ You can also return a promise from isValid. While the promise is pending, the wi
 ```
 
 Note: Do not create a promise inside isValid - isValid is called right before trying to persist. This means that even if a previous promise was already resolved, when the user hits 'save', `isValid` will be called again - if it returns a new Promise it will be immediately marked as in error until the new promise resolves.
+
+<!-- AUTO-GENERATED-CONTENT:END -->

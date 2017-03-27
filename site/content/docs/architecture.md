@@ -65,4 +65,5 @@ Both control and preview widgets receive a `getAsset` selector via props. Displa
 
 The actual persistence of the content and medias inserted into the control component are delegated to the backend implementation. The backend will be called with the updated values and a a list of assetProxy objects for each field of the entry, and should return a promise that can resolve into the persisted entry object and the list of the persisted media URIs.
 
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/architecture.md) -->
 <!-- AUTO-GENERATED-CONTENT:END -->

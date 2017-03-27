@@ -40,6 +40,9 @@ header {
     }
   }
 
+  .contained {
+    margin-top: $micro;
+  }
   .algolia-search {
     appearance: none;
     -webkit-appearance: none;

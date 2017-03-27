@@ -27,3 +27,7 @@ To build your static output to the `/dist` folder, use:
 ```bash
 npm run build
 ```
+
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:src='https://github.com/netlify/docs/blob/master/README.md') -->
+
+<!-- AUTO-GENERATED-CONTENT:END -->

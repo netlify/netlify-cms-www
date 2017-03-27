@@ -2,7 +2,7 @@
 title: Architecture
 position: 8
 ---
-
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/architecture.md) -->
 # Technical Architecture
 
 Netlify CMS is a React Application, using Redux for state management with immutable data structures (immutable.js).
@@ -15,7 +15,7 @@ The structure of an entry is defined as a series of fields, each with a `name`, 
 
 The `widget` determines the UI widget that the content editor will use when editing this field of an entry, as well as how the content of the field is presented in the editing preview.
 
-Entries are loaded and persisted through a `backend` that will typically represent a `git` repository.
+Entries are loaded and persisted through a `backend` that will typically represent a `git` repository. 
 
 ## State shape / reducers
 **Auth:** Keeps track of the logged state and the current user.
@@ -64,3 +64,5 @@ The control component receives 3 callbacks as props: onChange, onAddAsset & onRe
 Both control and preview widgets receive a `getAsset` selector via props. Displaying the media (or its uri) for the user should always be done via `getAsset`, as it returns a AssetProxy that can return the correct value for both medias already persisted on server and cached media not yet uploaded.
 
 The actual persistence of the content and medias inserted into the control component are delegated to the backend implementation. The backend will be called with the updated values and a a list of assetProxy objects for each field of the entry, and should return a promise that can resolve into the persisted entry object and the list of the persisted media URIs.
+
+<!-- AUTO-GENERATED-CONTENT:END -->

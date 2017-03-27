@@ -6,10 +6,11 @@
   "scripts": {
     "hugo": "gulp hugo",
     "webpack": "gulp webpack",
-    "build": "gulp build",
-    "build-preview": "gulp build-preview",
+    "build": "npm run docs && gulp build",
+    "build-preview": "npm run docs && gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "docs": "node markdown.config.js"
   },
   "author": "",
   "license": "MIT",
@@ -47,5 +48,8 @@
     "webpack": "^1.13.1",
     "whatwg-fetch": "^1.0.0",
     "yamljs": "^0.2.8"
+  },
+  "devDependencies": {
+    "markdown-magic": "^0.1.13"
   }
 }

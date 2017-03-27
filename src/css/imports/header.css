@@ -2,7 +2,6 @@ header {
   background: transparent;
   box-shadow: none;
   font-family: $roboto;
-  padding: $medium 0;
   position: absolute;
   text-align: center;
   transition: background .2s ease, padding .2s ease, box-shadow .2s ease;
@@ -27,37 +26,31 @@ header {
     vertical-align: middle;
     margin-left: $micro;
 
-    &:not(:first-child):not(:last-child) {
+    &.docs-link {
       display: none;
 
       @media screen and (min-width: 550px) {
         display: initial;
+        margin-right: 12px;
+      }
+
+      @media screen and (min-width: 653px) {
+        margin: initial;
       }
     }
   }
 
-  input.closed {
-    color:red;
-    display: none;
-  }
-
-  input {
-    display: block;
-    padding: $micro;
-    padding-left: 0;
-    width: 100%;
+  .algolia-search {
+    appearance: none;
+    -webkit-appearance: none;
     border: none;
     border-radius: 0;
-    appearance: none;
     background: none;
     color: $lightGrey;
-    display: block;
+    display: inline-block;
     font-size: $tiny;
     font-weight: $regular;
-    height: $medium;
-    padding-left: 0;
-    -webkit-appearance: none;
-    width: 100%;
+    padding: 2px $micro $micro 0;
     visibility: visible;
 
     &:focus {
@@ -75,34 +68,9 @@ header {
       }
     }
 
-  }
-
-  .search-icon-circle {
-    @media screen and (min-width: $tablet) {
-      width: 13px;
-      height: 13px;
-      border-width: 3px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 6px;
-      height: 6px;
-      border-width: 2px;
-    }
-  }
-
-  .search-icon-rectangle {
-    @media screen and (min-width: $tablet) {
-      right: -5px;
-      bottom: -2px;
-      width: $micro;
-      border-width: 2px;
-    }
-    @media screen and (min-width: $desktop) {
-      right: -4px;
-      bottom: -2px;
-      width: 5px;
-      border-width: 1px;
+    &.closed {
+      color:red;
+      display: none;
     }
   }
 
@@ -115,72 +83,32 @@ header {
     position: relative;
 
     @media screen and (min-width: $tablet) {
-      top: -1px;
+      top: -3px;
     }
 
     .search-icon-circle {
-      width: 13px;
-      height: 13px;
-      border: 3px solid $lightGrey;
+      height: 6px;
+      border: 2px solid $lightGrey;
       border-radius: $xl;
       transition: all .4s ease;
-
-      @media screen and (min-width: $tablet) {
-        width: 6px;
-        height: 6px;
-        border-width: 2px;
-      }
+      width: 6px;
     }
 
     .search-icon-rectangle {
-      position: absolute;
-      right: -5px;
-      bottom: -2px;
-      width: $micro;
-      transform: rotate(45deg);
-      border: 2px solid $lightGrey;
+      border: 1px solid $lightGrey;
       border-radius: 3px;
+      bottom: -2px;
+      position: absolute;
+      right: -4px;
+      transform: rotate(45deg);
       transition: all .2s linear;
-
-      @media screen and (min-width: $tablet) {
-        right: -4px;
-        bottom: -2px;
-        width: 5px;
-        border-width: 1px;
-      }
-
-      &.left {
-        visibility: hidden;
-        transition-delay: .1s;
-      }
-    }
-
-    &.active {
-      @media screen and (max-width: 767px) {
-        .search-icon-circle {
-          height: 0;
-          width: 0;
-          transform: translate(-$micro, $micro);
-        }
-
-        .search-icon-rectangle {
-          right: -5px;
-          bottom: -$micro;
-          width: 28px;
-
-          &.left {
-            visibility: visible;
-            transform: rotate(-45deg);
-          }
-        }
-      }
+      width: 5px;
     }
   }
 
   .utility-input {
-    display: block;
+    display: none;
     padding: $micro;
-    white: 168px;
     width: auto;
     border: 1px solid #e8eaeb;
     border-radius: 4px;
@@ -193,6 +121,10 @@ header {
     font-size: 16px;
     line-height: 24px;
     transition: all .2s ease-in-out;
+
+    @media screen and (min-width: 653px) {
+      display: inline;
+    }
 
     &:focus,
     &:active {
@@ -217,8 +149,12 @@ header {
 
     @media screen and (min-width: $mobile) {
       float: left;
-      margin: -3px 0 -6px 0;
+      margin: -$micro 0 -6px 0;
       width: initial;
+    }
+
+    @media screen and (min-width: 653px) {
+      margin-top: 1px
     }
   }
 }

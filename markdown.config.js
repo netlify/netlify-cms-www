@@ -6,7 +6,7 @@ const callback = function(updatedContent, outputConfig) {
   console.log('all set!')
 }
 
-const magicDocFiles = [
+const docFiles = [
   'architecture.md',
   'editorial-workflow.md',
   'extending.md',
@@ -19,7 +19,14 @@ const magicDocFiles = [
   'test-drive.md'
 ]
 
-magicDocFiles.map((file) => {
- const markdownPath = path.join(__dirname, '/', `/site/content/docs/${file}`)
- markdownMagic(markdownPath, config, callback)
+const markdownPaths = docFiles.map((file) => {
+  return path.join(__dirname, `/site/content/docs/${file}`)
 })
+
+function markWithMagic(filePaths) {
+  markdownMagic(filePaths, config, callback)
+}
+
+export default function makeMagic() {
+  markWithMagic(markdownPaths)
+}

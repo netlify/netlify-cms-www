@@ -14,15 +14,18 @@ import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
+import markWithMagic from './markdown.config.js';
+
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
 const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
+gulp.task("docs", (cb) => markWithMagic())
 
-gulp.task("build", ["css", "js", "fonts", "images", "hugo"]);
-gulp.task("build-preview", ["css", "js", "fonts", "images", "hugo-preview"]);
+gulp.task("build", ["css", "docs", "js", "fonts", "images", "hugo"]);
+gulp.task("build-preview", ["css", "docs", "js", "fonts", "images", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/**/*.css")
@@ -82,6 +85,7 @@ function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
 
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+    console.log("-----" + code)
     if (code === 0) {
       browserSync.reload();
       cb();
@@ -91,3 +95,4 @@ function buildSite(cb, options) {
     }
   });
 }
+

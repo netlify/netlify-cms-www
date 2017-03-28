@@ -2,6 +2,7 @@
 title: Architecture
 position: 8
 ---
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/quick-start.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/architecture.md) -->
 # Technical Architecture
 

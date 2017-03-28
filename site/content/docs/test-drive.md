@@ -2,7 +2,7 @@
 title: Test Drive
 position: 1
 ---
-
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/test-drive.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/test-drive.md) -->
 # Take a test drive
 

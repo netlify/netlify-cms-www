@@ -7,7 +7,7 @@
     "hugo": "gulp hugo",
     "webpack": "gulp webpack",
     "build": "gulp build",
-    "build-preview": "npm run docs && gulp build-preview",
+    "build-preview": "gulp build-preview",
     "start": "gulp server",
     "lint": "eslint src",
     "docs": "node markdown.config.js"

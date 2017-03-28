@@ -2,7 +2,8 @@
 title: Contributing
 position: 9
 ---
-<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/configuration-guide.md) -->
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/contributor-guide.md)
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/contributor-guide.md) -->
 # Welcome, contributors!
 
 We're hoping that Netlify CMS will do for the [JAMstack](https://www.jamstack.org) what WordPress did for dynamic sites back in the day. We know we can't do that without building a thriving community of contributors and users, and we'd love to have you join us.

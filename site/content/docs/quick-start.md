@@ -3,6 +3,7 @@ title: Quick Start
 position: 2
 ---
 
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/architecture.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/quick-start.md) -->
 # Quick Start
 

@@ -2,6 +2,7 @@
 title: Custom Previews
 position: 5
 ---
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/customization.md)
 
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/customization.md) -->
 ## Customizing the Preview Pane

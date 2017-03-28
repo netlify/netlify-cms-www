@@ -2,6 +2,7 @@
 title: Introduction
 position: 0
 ---
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/intro.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/intro.md) -->
 # Introduction
 

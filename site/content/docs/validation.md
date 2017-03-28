@@ -2,6 +2,7 @@
 title: Validation
 position: 7
 ---
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/validation.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/validation.md) -->
 # Collection Field Validation
 

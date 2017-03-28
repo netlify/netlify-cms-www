@@ -3,6 +3,7 @@ header {
   box-shadow: none;
   font-family: $roboto;
   position: absolute;
+  padding: $medium 0;
   text-align: center;
   transition: background .2s ease, padding .2s ease, box-shadow .2s ease;
   width: 100%;
@@ -40,9 +41,6 @@ header {
     }
   }
 
-  .contained {
-    margin-top: $micro;
-  }
   .algolia-search {
     appearance: none;
     -webkit-appearance: none;
@@ -113,7 +111,7 @@ header {
     display: none;
     padding: $micro;
     width: auto;
-    border: 1px solid #e8eaeb;
+    border: 1px solid white;
     border-radius: 4px;
     background: none;
     color: white;

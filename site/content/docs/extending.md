@@ -2,6 +2,8 @@
 title: Extending Widgets
 position: 6
 ---
+[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/extending.md)
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/extending.md) -->
 
 ## Extending With Widgets
 
@@ -101,3 +103,4 @@ CMS.registerEditorComponent({
 
 ![youtube-widget](/img/youtube-widget.png)
 
+<!-- AUTO-GENERATED-CONTENT:END -->

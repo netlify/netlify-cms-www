@@ -17,9 +17,6 @@
     {{ end }}
   </head>
   <body>
-    {{ if .Site.Data.header.notification }}
-      <div class="notification">{{ .Site.Data.header.notification.hook | markdownify }} {{ if .Site.Data.header.notification.cta }}<a href="{{ .Site.Data.header.notification.link }}" class="text-link">{{ .Site.Data.header.notification.cta }}</a>{{ end }}</div>
-    {{ end }}
     <header id="header" {{ if or (eq .Section "docs") (eq .Title "Docs") }}class="scrolled"{{ end }}>
       <div class="contained">
         <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>

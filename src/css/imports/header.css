@@ -69,42 +69,6 @@ header {
       }
     }
 
-    &.closed {
-      color:red;
-      display: none;
-    }
-  }
-
-  .search-button {
-    background-color: #2a2c2d;
-    border: none;
-  }
-
-  .search-icon {
-    position: relative;
-
-    @media screen and (min-width: $tablet) {
-      top: -3px;
-    }
-
-    .search-icon-circle {
-      height: 6px;
-      border: 2px solid $lightGrey;
-      border-radius: $xl;
-      transition: all .4s ease;
-      width: 6px;
-    }
-
-    .search-icon-rectangle {
-      border: 1px solid $lightGrey;
-      border-radius: 3px;
-      bottom: -2px;
-      position: absolute;
-      right: -4px;
-      transform: rotate(45deg);
-      transition: all .2s linear;
-      width: 5px;
-    }
   }
 
   .utility-input {
@@ -116,6 +80,8 @@ header {
     background: none;
     color: white;
     margin-right: 8px;
+    padding-bottom: 9px;
+    padding-left: 16px;
     text-align: left;
     text-decoration: none;
     font-weight: 600;

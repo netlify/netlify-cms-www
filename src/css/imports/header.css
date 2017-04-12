@@ -77,105 +77,6 @@ header {
 
   }
 
-  .search-icon-circle {
-    @media screen and (min-width: $tablet) {
-      width: 13px;
-      height: 13px;
-      border-width: 3px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 6px;
-      height: 6px;
-      border-width: 2px;
-    }
-  }
-
-  .search-icon-rectangle {
-    @media screen and (min-width: $tablet) {
-      right: -5px;
-      bottom: -2px;
-      width: $micro;
-      border-width: 2px;
-    }
-    @media screen and (min-width: $desktop) {
-      right: -4px;
-      bottom: -2px;
-      width: 5px;
-      border-width: 1px;
-    }
-  }
-
-  .search-button {
-    background-color: #2a2c2d;
-    border: none;
-  }
-
-  .search-icon {
-    position: relative;
-
-    @media screen and (min-width: $tablet) {
-      top: -1px;
-    }
-
-    .search-icon-circle {
-      width: 13px;
-      height: 13px;
-      border: 3px solid $lightGrey;
-      border-radius: $xl;
-      transition: all .4s ease;
-
-      @media screen and (min-width: $tablet) {
-        width: 6px;
-        height: 6px;
-        border-width: 2px;
-      }
-    }
-
-    .search-icon-rectangle {
-      position: absolute;
-      right: -5px;
-      bottom: -2px;
-      width: $micro;
-      transform: rotate(45deg);
-      border: 2px solid $lightGrey;
-      border-radius: 3px;
-      transition: all .2s linear;
-
-      @media screen and (min-width: $tablet) {
-        right: -4px;
-        bottom: -2px;
-        width: 5px;
-        border-width: 1px;
-      }
-
-      &.left {
-        visibility: hidden;
-        transition-delay: .1s;
-      }
-    }
-
-    &.active {
-      @media screen and (max-width: 767px) {
-        .search-icon-circle {
-          height: 0;
-          width: 0;
-          transform: translate(-$micro, $micro);
-        }
-
-        .search-icon-rectangle {
-          right: -5px;
-          bottom: -$micro;
-          width: 28px;
-
-          &.left {
-            visibility: visible;
-            transform: rotate(-45deg);
-          }
-        }
-      }
-    }
-  }
 
   .utility-input {
     display: block;
@@ -188,6 +89,7 @@ header {
     color: white;
     margin-right: 8px;
     padding-bottom: 9px;
+    padding-left: 16px;
     text-align: left;
     text-decoration: none;
     font-weight: 600;

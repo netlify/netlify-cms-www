@@ -2,8 +2,6 @@
 title: Configuration
 position: 3
 ---
-[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/configuration.md)
-
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/configuration.md) -->
 # Configuring your site
 
@@ -23,4 +21,5 @@ Widget | UI | Data Type
 `list` | text input | strings separated by commas
 
 We’re always adding new widgets, and you can also [create your own](/docs/extending).
+
 <!-- AUTO-GENERATED-CONTENT:END -->

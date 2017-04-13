@@ -20,7 +20,14 @@
 		<article class="docs-content" id="docs-content">
 			{{ range sort .Data.Pages "Params.position" }}
 				{{ if eq .Params.position 0 }}
-					<div>{{ .Content }}</div>
+					<div>
+            <p>
+              <a href="https://github.com/netlify/netlify-cms/blob/master/{{ .File.Path }}">
+                Edit this page
+              </a>
+            </p>
+            {{ .Content }}
+          </div>
 				{{ end }}
 			{{ end }}
 		</article>

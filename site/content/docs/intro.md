@@ -2,7 +2,6 @@
 title: Introduction
 position: 0
 ---
-[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/intro.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/intro.md) -->
 # Introduction
 
@@ -118,5 +117,6 @@ Netlify CMS exposes a `window.CMS` global object that you can use to register cu
 * `registerWidget` - registers a custom widget
 
 * `registerEditorComponent` - adds a block component to the Markdown editor
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->

@@ -2,7 +2,6 @@
 title: Editorial Workflow
 position: 4
 ---
-[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/editorial-workflow.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/editorial-workflow.md) -->
 # Editorial Workflow
 
@@ -46,4 +45,5 @@ Actual data are stored in individual `json` files committed to this three.
 Instead of adding logic to `CollectionPage` and `EntryPage`, the Editorial Workflow is implemented as Higher Order Components, adding UI and dispatching additional actions.
 
 Furthermore, all editorial workflow state is managed in Redux - there's an `actions/editorialWorkflow.js` and a `reducers/editorialWorkflow.js` files.
+
 <!-- AUTO-GENERATED-CONTENT:END -->

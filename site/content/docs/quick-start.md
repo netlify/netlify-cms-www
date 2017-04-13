@@ -2,8 +2,6 @@
 title: Quick Start
 position: 2
 ---
-
-[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/quick-start.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/quick-start.md) -->
 # Quick Start
 
@@ -205,5 +203,6 @@ Based on this example, you can go through the post types in your site and add th
 With your configuration complete, it's time to try it out! Go to `yoursite.com/admin` and complete the login prompt to access the admin interface. To add users, simply add them as collaborators on the GitHub repo.
 
 Happy posting!
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->

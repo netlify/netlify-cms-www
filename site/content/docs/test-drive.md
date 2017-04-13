@@ -2,7 +2,6 @@
 title: Test Drive
 position: 1
 ---
-[Edit this page](https://github.com/netlify/netlify-cms/blob/master/docs/test-drive.md)
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/test-drive.md) -->
 # Take a test drive
 
@@ -32,4 +31,5 @@ When you complete the registration, you'll be given a **Client ID** and a **Clie
 ## Access the CMS
 
 With the site deployed and authentication in place, you'll be able to enter the CMS by going to the URL of your new site and appending `/admin`.
+
 <!-- AUTO-GENERATED-CONTENT:END -->

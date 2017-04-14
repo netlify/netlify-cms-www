@@ -2,8 +2,8 @@
 title: Custom Previews
 position: 5
 ---
-
-## Customizing the Preview Pane
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/customization.md) -->
+# Customizing the Preview Pane
 
 The NetlifyCMS exposes an `window.CMS` global object that you can use to register custom widgets, previews and editor plugins. The available customization methods are:
 
@@ -197,5 +197,5 @@ Registers a template for a collection.
       }
     }
     ```
-    
-    
+
+<!-- AUTO-GENERATED-CONTENT:END -->

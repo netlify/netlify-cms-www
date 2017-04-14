@@ -2,7 +2,7 @@
 title: Test Drive
 position: 1
 ---
-
+<!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/test-drive.md) -->
 # Take a test drive
 
 You can easily try out Netlify CMS by running it on a pre-configured starter site. Our example in the intro is the [Kaldi small business Hugo template](https://github.com/netlify-templates/kaldi-hugo-cms-template). Use the deploy button below to build and deploy your own copy of the repository:
@@ -31,3 +31,5 @@ When you complete the registration, you'll be given a **Client ID** and a **Clie
 ## Access the CMS
 
 With the site deployed and authentication in place, you'll be able to enter the CMS by going to the URL of your new site and appending `/admin`.
+
+<!-- AUTO-GENERATED-CONTENT:END -->

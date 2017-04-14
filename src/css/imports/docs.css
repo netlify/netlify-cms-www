@@ -98,6 +98,14 @@
     line-height: 28px;
     font-weight: $light;
 
+    .edit-this-page {
+      float: right;
+    }
+
+    #pencil {
+      fill: #7CA511;
+    }
+
     @media screen and (min-width: $tablet) {
       @neat-span-columns 17 24;
       @neat-shift 1 24;
@@ -119,12 +127,6 @@
 
 		iframe {
 			width: 100%;
-		}
-
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto;
 		}
 
     table {

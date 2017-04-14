@@ -129,6 +129,11 @@
 			width: 100%;
 		}
 
+    img {
+ 			max-width: 100%;
+ 			height: auto;
+ 		}
+
     table {
       background: #f7f7f7;
       border-radius: $borderRadius;

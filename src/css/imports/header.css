@@ -30,7 +30,7 @@ header {
     &:not(:first-child):not(:last-child) {
       display: none;
 
-      @media screen and (min-width: 675px) {
+      @media screen and (min-width: 705px) {
         display: initial;
       }
     }
@@ -42,10 +42,8 @@ header {
   }
 
   input {
-    display: block;
-    padding: $micro;
+    display: none;
     padding-left: 0;
-    width: 100%;
     border: none;
     border-radius: 0;
     appearance: none;
@@ -62,6 +60,7 @@ header {
 
     &:focus {
       outline: none;
+      display: block;
 
       ~ .bar {
         &::before,
@@ -77,7 +76,6 @@ header {
 
   }
 
-
   .utility-input {
     display: block;
     padding: $micro;
@@ -89,7 +87,6 @@ header {
     color: white;
     margin-right: 8px;
     padding-bottom: 9px;
-    padding-left: 16px;
     text-align: left;
     text-decoration: none;
     font-weight: 600;

@@ -30,7 +30,7 @@ header {
     &.docs-link {
       display: none;
 
-      @media screen and (min-width: 550px) {
+      @media screen and (min-width: $tablet) {
         display: initial;
         margin-right: 12px;
       }
@@ -41,9 +41,9 @@ header {
     }
   }
 
-  .algolia-search {
-    appearance: none;
-    -webkit-appearance: none;
+  input {
+    display: none;
+    padding-left: 0;
     border: none;
     border-radius: 0;
     background: none;
@@ -56,6 +56,7 @@ header {
 
     &:focus {
       outline: none;
+      display: block;
 
       ~ .bar {
         &::before,
@@ -81,7 +82,6 @@ header {
     color: white;
     margin-right: 8px;
     padding-bottom: 9px;
-    padding-left: 16px;
     text-align: left;
     text-decoration: none;
     font-weight: 600;

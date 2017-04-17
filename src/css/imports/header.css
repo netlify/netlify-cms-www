@@ -25,6 +25,7 @@ header {
     color: white;
     display: inline-block;
     vertical-align: middle;
+    -webkit-vertical-align: middle !important;
     margin-left: $micro;
 
     &.docs-link {
@@ -32,6 +33,7 @@ header {
 
       @media screen and (min-width: $tablet) {
         display: initial;
+        -webkit-display: intial !important;
         margin-right: 12px;
       }
 
@@ -41,12 +43,22 @@ header {
     }
   }
 
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
   .algolia-search {
-    margin-top: 2px;
+    margin-top: 1px;
+    -webkit-margin-top: 0;
+    -webkit-display: inline-block;
+    vertical-align: baseline !important;
+  }
+  input.closed {
+    display: none;
   }
 
   input {
-    display: none;
     padding-left: 0;
     border: none;
     border-radius: 0;
@@ -57,11 +69,13 @@ header {
     display: inline-block;
     font-size: $tiny;
     font-weight: $regular;
+    max-width: 160px;
+    -webkit-appearance: none;
     visibility: visible;
 
     &:focus {
       outline: none;
-      display: block;
+      display: inline-block;
 
       ~ .bar {
         &::before,

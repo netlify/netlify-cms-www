@@ -30,14 +30,13 @@ header {
     &:not(:first-child):not(:last-child) {
       display: none;
 
-      @media screen and (min-width: 705px) {
+      @media screen and (min-width: $tablet) {
         display: initial;
       }
     }
   }
 
   input.closed {
-    color:red;
     display: none;
   }
 
@@ -77,10 +76,9 @@ header {
   }
 
   .utility-input {
-    display: block;
     padding: $micro;
     white: 168px;
-    width: auto;
+    max-width: 120px;
     border: 1px solid #e8eaeb;
     border-radius: 4px;
     background: none;
@@ -109,6 +107,7 @@ header {
       text-decoration: none;
       line-height: $small;
     }
+
   }
 
   .logo {

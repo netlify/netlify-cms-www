@@ -41,17 +41,22 @@ header {
     }
   }
 
+  .algolia-search {
+    margin-top: 2px;
+  }
+
   input {
     display: none;
     padding-left: 0;
     border: none;
     border-radius: 0;
+    appearance: none;
     background: none;
     color: $lightGrey;
+    padding: 2px $micro $micro 0;
     display: inline-block;
     font-size: $tiny;
     font-weight: $regular;
-    padding: 2px $micro $micro 0;
     visibility: visible;
 
     &:focus {

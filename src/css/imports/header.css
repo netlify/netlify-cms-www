@@ -138,9 +138,5 @@ header {
       margin: -$micro 0 -6px 0;
       width: initial;
     }
-
-    @media screen and (min-width: 653px) {
-      margin-top: 1px
-    }
   }
 }

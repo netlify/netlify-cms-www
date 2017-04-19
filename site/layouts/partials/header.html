@@ -15,12 +15,17 @@
     {{ if or (eq .Section "docs") (eq .Title "Docs") }}
       <link rel="stylesheet" href="/css/lib/prism.css"/>
     {{ end }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
   </head>
   <body>
     <header id="header" {{ if or (eq .Section "docs") (eq .Title "Docs") }}class="scrolled"{{ end }}>
       <div class="contained">
         <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>
-        <a href="/docs">Docs</a>
-        <a href="https://github.com/netlify/netlify-cms" class="btn-secondary small"><img src="/img/github.svg"/> Fork me on GitHub</a>
+        <a class="docs-link" href="/docs">Docs</a>
+        <a class="utility-input">
+          <img src="/img/search.svg" />
+          <input type="search" placeholder="Search the docs" class="algolia-search"/>
+        </a>
+        <a href="https://github.com/netlify/netlify-cms" class="btn-secondary small github-btn "><img src="/img/github.svg"/> Fork me on GitHub</a>
       </div>
     </header>

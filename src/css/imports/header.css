@@ -55,8 +55,8 @@ header {
   background: transparent;
   box-shadow: none;
   font-family: $roboto;
-  padding: $medium 0;
   position: absolute;
+  padding: $medium 0;
   text-align: center;
   transition: background .2s ease, padding .2s ease, box-shadow .2s ease;
   width: 100%;
@@ -78,22 +78,107 @@ header {
     color: white;
     display: inline-block;
     vertical-align: middle;
+    -webkit-vertical-align: middle !important;
+    margin-left: $micro;
 
-    &:not(:first-child):not(:last-child) {
+    &.docs-link {
       display: none;
 
-      @media screen and (min-width: 550px) {
+      @media screen and (min-width: $tablet) {
         display: initial;
+        -webkit-display: intial !important;
+        margin-right: 12px;
+      }
+
+      @media screen and (min-width: 653px) {
+        margin: initial;
+      }
+    }
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .algolia-search {
+    margin-top: 1px;
+    -webkit-margin-top: 0;
+    -webkit-display: inline-block;
+    vertical-align: baseline !important;
+  }
+  input.closed {
+    display: none;
+  }
+
+  input {
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    background: none;
+    color: $lightGrey;
+    padding: 2px $micro $micro 0;
+    display: inline-block;
+    font-size: $tiny;
+    font-weight: $regular;
+    max-width: 160px;
+    -webkit-appearance: none;
+    visibility: visible;
+
+    &:focus {
+      outline: none;
+      display: inline-block;
+
+      ~ .bar {
+        &::before,
+        &::after {
+          width: 50%;
+        }
+      }
+
+      ~ .button-submit {
+        margin-top: -35px;
       }
     }
 
-    &:last-child {
-      vertical-align: middle;
-      padding-bottom: 10px;
+  }
 
-      @media screen and (min-width: $mobile) {
-        margin-left: 19px;
-      }
+  .utility-input {
+    display: none;
+    padding: $micro;
+    width: auto;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: none;
+    color: white;
+    margin-right: 8px;
+    padding-bottom: 9px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .2s ease-in-out;
+
+    @media screen and (min-width: 653px) {
+      display: inline;
+    }
+
+    &:focus,
+    &:active {
+      outline-style: none;
+    }
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder  {
+      font-size: $tiny;
+      font-weight: $semibold;
+      text-align: left;
+      text-decoration: none;
+      line-height: $small;
     }
   }
 
@@ -103,7 +188,7 @@ header {
 
     @media screen and (min-width: $mobile) {
       float: left;
-      margin: -3px 0 -6px 0;
+      margin: -$micro 0 -6px 0;
       width: initial;
     }
   }

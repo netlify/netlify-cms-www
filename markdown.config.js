@@ -13,7 +13,7 @@ const docFiles = [
   'intro.md',
   'quick-start.md',
   'validation.md',
-  'configuration.md',
+  'widgets.md',
   'contributor-guide.md',
   'customization.md',
   'test-drive.md'

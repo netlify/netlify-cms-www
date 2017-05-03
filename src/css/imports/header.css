@@ -74,6 +74,14 @@ header {
     }
   }
 
+  &.docs {
+    background: $darkGrey;
+    padding: $small 0;
+    @media screen and (max-width: $mobile) {
+      position: static;
+    }
+  }
+
   a {
     color: white;
     display: inline-block;

@@ -1,6 +1,9 @@
 .docs.page {
-  padding: 157px $medium $xl $medium;
+  padding: 69px $medium $xl $medium;
   text-align: left;
+  @media screen and (min-width: $mobile) {
+    padding-top: 157px;
+  }
 
   .sidebar {
     @media screen and (min-width: $tablet) {

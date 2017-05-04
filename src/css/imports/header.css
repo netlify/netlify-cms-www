@@ -86,7 +86,7 @@ header {
       display: none;
     }
 
-    a.github-btn {
+    .github-btn {
       display: none;
       @media screen and (min-width: $tablet) {
         display: inline-block;
@@ -94,7 +94,9 @@ header {
     }
 
     .utility-input {
-      display: inline;
+      @media screen and (min-width: $mobile) {
+        display: inline;
+      }
     }
   }
 

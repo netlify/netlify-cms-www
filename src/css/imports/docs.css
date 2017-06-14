@@ -1,6 +1,9 @@
 .docs.page {
-  padding: 157px $medium $xl $medium;
+  padding: 69px $tiny $xl;
   text-align: left;
+  @media screen and (min-width: $mobile) {
+    padding: 157px $medium $xl;
+  }
 
   .sidebar {
     @media screen and (min-width: $tablet) {
@@ -188,15 +191,14 @@
 		width: 100%;
 		text-align: left;
 		margin: 34px 0 $medium 0;
-		display: none;
-
-		@media screen and (min-width: $mobile) {
-			display: table;
-		}
 
 		th,
 		td {
-			padding: 0 $small;
+			padding: 0 $micro;
+
+      @media screen and (min-width: $mobile) {
+        padding: 0 $small;
+      }
 		}
 
 		th {
@@ -215,16 +217,6 @@
 		td {
 			font-size: 14px;
 			height: 46px;
-		}
-	}
-
-	.mobile-table-marker + table,
-	.mobile-table-marker + table + table,
-	.mobile-table-marker + table + table + table {
-		display: table;
-
-		@media screen and (min-width: $mobile) {
-			display: none;
 		}
 	}
 }

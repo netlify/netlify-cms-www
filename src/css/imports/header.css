@@ -74,6 +74,32 @@ header {
     }
   }
 
+  &.docs {
+    background: $darkGrey;
+    padding: $small 0;
+
+    @media screen and (max-width: $mobile) {
+      position: static;
+    }
+
+    a.docs-link {
+      display: none;
+    }
+
+    .github-btn {
+      display: none;
+      @media screen and (min-width: $tablet) {
+        display: inline-block;
+      }
+    }
+
+    .utility-input {
+      @media screen and (min-width: $mobile) {
+        display: inline;
+      }
+    }
+  }
+
   a {
     color: white;
     display: inline-block;
@@ -82,17 +108,7 @@ header {
     margin-left: $micro;
 
     &.docs-link {
-      display: none;
-
-      @media screen and (min-width: $tablet) {
-        display: initial;
-        -webkit-display: intial !important;
         margin-right: 12px;
-      }
-
-      @media screen and (min-width: 653px) {
-        margin: initial;
-      }
     }
   }
 
@@ -161,7 +177,7 @@ header {
     line-height: 24px;
     transition: all .2s ease-in-out;
 
-    @media screen and (min-width: 653px) {
+    @media screen and (min-width: $tablet) {
       display: inline;
     }
 

@@ -129,7 +129,7 @@
       width: 100%;
     }
 
-    video {
+    img {
       border: 1px solid white;
       border-radius: 0 0 $largeBorderRadius $largeBorderRadius;
       box-sizing: border-box;

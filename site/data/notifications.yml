@@ -1,9 +1,9 @@
 notifications:
-  - title: test
+  - message: test
     published: true
-    message: test
+    title: test
     url: test
-  - title: test
+  - message: test
     published: true
-    message: test
+    title: test
     url: test

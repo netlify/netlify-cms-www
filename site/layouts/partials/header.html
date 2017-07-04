@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
   </head>
   <body>
+    {{ range .Site.Data.notifications }}
+      {{ range . }}
+        {{ if .published }}
+          <a href="{{ .url }}" class="notification {{ if .loud }}notification-loud{{end}}">{{ .message }}</a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
     <header id="header" {{ if or (eq .Section "docs") (eq .Title "Docs") }}class="docs"{{ end }}>
       <div class="contained">
         <a href="/" class="logo"><img src="/img/netlify-cms-logo.svg"/></a>

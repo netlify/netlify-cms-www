@@ -1,5 +1,6 @@
 notifications:
-  - message: >-
+  - loud: true
+    message: >-
       Join us on Google Hangouts for open, bi-weekly development planning
       sessions starting Wednesday, July 5th, 11am-12pm ET!
     published: true

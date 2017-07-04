@@ -1,9 +1,9 @@
 notifications:
-  - title: test
+  - loud: true
+    message: >-
+      Join us on Google Hangouts for open, bi-weekly development planning
+      sessions starting Wednesday, July 5th, 11am-12pm ET!
     published: true
-    message: test
-    url: test
-  - title: test
-    published: true
-    message: test
-    url: test
+    title: Netlify CMS Planning Sessions Promo
+    url: >-
+      https://www.eventbrite.com/e/netlify-cms-planning-session-bi-weekly-tickets-35794059997

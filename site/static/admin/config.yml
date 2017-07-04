@@ -17,3 +17,20 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Position", name: "position", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: notifications
+    label: Notifications
+    files:
+      - name: notifications
+        label: Notifications
+        file: site/data/notifications.yml
+        description: Site-top notifications - publish one at a time
+        fields:
+          - name: notifications
+            label: Notifications
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string, tagname: h1}
+              - {label: Published, name: published, widget: boolean}
+              - {label: Loud, name: loud, widget: boolean}
+              - {label: Message, name: message, widget: text}
+              - {label: URL, name: url}

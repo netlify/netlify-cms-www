@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: netlify/netlify-cms-www # Path to your Github repository
-  branch: master # Branch to update (master by default)
+  branch: notifications-cms # Branch to update (master by default)
 
 publish_mode: editorial_workflow
 
@@ -17,3 +17,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Position", name: "position", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: notifications
+    label: Notifications
+    folder: "site/data/notifications.yml"
+    description: test
+    fields:
+      - name: notifications
+        label: Notifications
+        widget: list
+        fields:
+          - {label: Title, name: title, tagname: h1}
+          - {label: Published, name: published, widget: boolean}
+          - {label: Message, name: message, widget: text}
+          - {label: URL, name: url}

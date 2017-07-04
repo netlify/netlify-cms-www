@@ -1,0 +1,9 @@
+notifications:
+  - title: test
+    published: true
+    message: test
+    url: test
+  - title: test
+    published: true
+    message: test
+    url: test

@@ -3,7 +3,3 @@ notifications:
     published: true
     title: test
     url: test
-  - message: test
-    published: true
-    title: test
-    url: test

@@ -3,7 +3,7 @@ notifications:
     message: >-
       Register to join us online for our open development planning sessions
       bi-weekly, starting Wednesday, July 19th, 8am-9am PT!
-    published: false
+    published: true
     title: Netlify CMS Development Planning Sessions Promo
     url: >-
       https://www.eventbrite.com/e/netlify-cms-planning-session-bi-weekly-tickets-35794059997

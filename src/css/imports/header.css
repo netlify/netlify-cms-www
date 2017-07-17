@@ -120,7 +120,7 @@ header {
     -webkit-vertical-align: middle !important;
     margin-left: $micro;
 
-    &.docs-link {
+    &.nav-link {
         margin-right: 12px;
     }
   }

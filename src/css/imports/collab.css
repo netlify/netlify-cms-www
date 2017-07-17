@@ -1,10 +1,13 @@
-.collab {
+.collab,
+.how-it-works {
   margin: $medium $tiny;
 
   @media screen and (min-width: $mobile) {
     margin: $large auto;
   }
+}
 
+.collab {
   h1 {
     margin-bottom: $small;
     text-align: center;
@@ -34,5 +37,13 @@
     @media screen and (min-width: $tablet) {
       margin-top: $medium;
     }
+  }
+}
+
+.how-it-works {
+  padding-bottom: $xl;
+
+  .section-label:not(:first-child) {
+    margin-top: $large;
   }
 }

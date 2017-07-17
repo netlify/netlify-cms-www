@@ -2,7 +2,7 @@
 
 var header = $("#header");
 
-if ($('.landing.page').length) {
+if ($('.landing.page, .community.page').length) {
   window.onscroll = function() {
 
     var currentWindowPos = document.documentElement.scrollTop || document.body.scrollTop;

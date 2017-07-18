@@ -121,7 +121,20 @@ header {
     margin-left: $micro;
 
     &.nav-link {
-        margin-right: 12px;
+      margin-right: 12px;
+      margin-bottom: $tiny;
+
+      @media screen and (min-width: 405px) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $tiny;
+      }
+
+      @media screen and (min-width: 587px) {
+        margin-bottom: 0;
+      }
     }
   }
 

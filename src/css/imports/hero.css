@@ -4,7 +4,7 @@
   background-image: linear-gradient(-17deg, $darkerGrey 17%, $darkGrey 94%);
   color: white;
   overflow: hidden;
-  padding: calc($xl * 1.75) 0 $large 0;
+  padding: calc($xl * 2.25) 0 $large 0;
   position: relative;
 
   @media screen and (min-width: $mobile) {
@@ -33,7 +33,7 @@
   }
 
   .hero-copy {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       @neat-span-columns 6;
     }
   }
@@ -99,6 +99,7 @@
 
   .mooseheads {
     margin: $micro 0 0 0;
+    text-align: left;
 
     strong {
       font-size: 12px;
@@ -110,7 +111,7 @@
     @neat-span-columns 6;
     display: none;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       display: initial;
     }
 
@@ -140,8 +141,6 @@
   }
 
   .calendar-cta {
-    @neat-span-columns 4;
-    @neat-shift 1;
     text-align: center;
     background: $darkerGrey;
     background-image: linear-gradient(-17deg, $darkerGrey 17%, $darkGrey 94%);
@@ -149,10 +148,19 @@
     box-shadow: 0 $micro $small rgba(0,0,0,0.1);
     padding: $medium;
     box-sizing: border-box;
+    max-width: 446px;
 
-    @media screen and (min-width: $desktop) {
-      display: initial;
+    @media screen and (min-width: $tablet) {
+      @neat-span-columns 5;
+      @neat-shift 1;
+      display: inline-block;
       position: fixed;
+      right: $medium;
+    }
+
+    @media screen and (min-width: 1280px) {
+      right: initial;
+      left: calc(50% - $large);
     }
 
     .calendar {

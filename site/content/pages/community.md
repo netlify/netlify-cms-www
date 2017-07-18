@@ -15,15 +15,17 @@ upcomingevent:
 howitworks: Every other week we have public development planning sessions. They're web based, last about an hour, and are geared toward contributors and those interested in contributing. Sessions currently take place every other Wednesday, 8am - 9am PT.
 
 howtojoin: |
-  On the web:
-  https://bluejeans.com/278173690/7613
+  **On the web:**
 
-  By phone:
+  1. https://bluejeans.com/278173690/7613
+
+  **By phone:**
+
   1. [+1.408.740.7256](tel:+14087407256) (United States)
 
-     [+1.408.317.9253](tel:+14083179253) (Alternate number)
+      [+1.408.317.9253](tel:+14083179253) (Alternate number)
 
-     (http://bluejeans.com/numbers)
+      (http://bluejeans.com/numbers)
 
   2. Enter Meeting ID: 278173690
 ---

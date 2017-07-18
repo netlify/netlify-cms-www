@@ -23,11 +23,8 @@
 	padding-bottom: $small;
 	@neat-span-columns 12;
 
-	@media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
 		@neat-span-columns 6;
-	}
-
-	@media screen and (min-width: $tablet) {
 		padding-bottom: 0;
 	}
 

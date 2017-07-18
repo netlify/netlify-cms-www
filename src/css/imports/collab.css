@@ -42,8 +42,13 @@
 
 .how-it-works {
   padding-bottom: $xl;
+  text-align: left;
 
   .section-label:not(:first-child) {
     margin-top: $large;
+  }
+
+  a {
+    color: $darkGreen;
   }
 }

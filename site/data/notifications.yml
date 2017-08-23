@@ -2,7 +2,7 @@ notifications:
   - loud: true
     message: >-
       Register to join us online for our next bi-weekly planning session on
-      Wednesday, August 30, 8am-9am PT!
+      Wednesday, August 30, 9am-10am PT!
     published: true
     title: Netlify CMS Development Planning Sessions Promo
     url: >-

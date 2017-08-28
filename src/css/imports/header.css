@@ -190,7 +190,7 @@ header {
     line-height: 24px;
     transition: all .2s ease-in-out;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 844px) {
       display: inline;
     }
 

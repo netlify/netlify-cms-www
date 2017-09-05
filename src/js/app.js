@@ -85,3 +85,40 @@ $('#search-button').click(function() {
 });
 
 
+// eventbrite info
+var eventInfoLoad = function() {
+  if ($('.community.page').length) {
+    var eventRequest = new XMLHttpRequest;
+    var eventbriteToken = 'C5PX65CJBVIXWWLNFKLO';
+    var eventbriteOrganiser = '14281996019';
+    eventRequest.open('GET', 'https://www.eventbriteapi.com/v3/events/search/?token=' + eventbriteToken + '&organizer.id=' + eventbriteOrganiser + '&expand=venue%27', true);
+
+    eventRequest.onload = function() {
+      if (eventRequest.status >= 200 && eventRequest.status < 400) {
+        // Success!
+        var data = JSON.parse(eventRequest.responseText);
+        var upcomingDate = data.events[0].start.utc;
+        updateDate(upcomingDate);
+      } else {
+        var upcomingDate = "0000-00-00T00:00:00Z";
+        updateDate(upcomingDate);
+      }
+
+    };
+
+    eventRequest.onerror = function() {
+       alert('The event info could not be loaded at this time, please try again later.');
+    };
+
+    function updateDate(eventDate) {
+      $('.month').append(moment(eventDate).format('MMMM'));
+      $('.day').append(moment(eventDate).format('DD'));
+      $('.calendar-cta h2 strong:first-child()').append(moment(eventDate).format('dddd, MMMM Do'));
+      $('.calendar-cta h2 strong:last-child()').append(moment(eventDate).utcOffset(-7).format('h a'));
+    }
+
+    eventRequest.send();
+  }
+}
+
+eventInfoLoad();

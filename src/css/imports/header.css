@@ -95,20 +95,27 @@ header {
       position: static;
     }
 
-    a.docs-link {
-      display: none;
+    .nav-link {
+      @media screen and (min-width: 487px) and (max-width: 767px) {
+        margin-top: $micro;
+      }
     }
 
     .github-btn {
-      display: none;
-      @media screen and (min-width: $tablet) {
-        display: inline-block;
+      @media screen and (max-width: 767px) {
+        display: none;
       }
     }
 
     .utility-input {
-      @media screen and (min-width: $mobile) {
-        display: inline;
+      @media screen and (max-width: 767px) {
+        display: block;
+        height: $small;
+        margin: $tiny 0 0 0;
+      }
+
+      @media screen and (min-width: 487px) and (max-width: 767px) {
+        margin-top: 32px;
       }
     }
   }
@@ -120,20 +127,38 @@ header {
     -webkit-vertical-align: middle !important;
     margin-left: $micro;
 
-    &.nav-link {
-      margin-right: 12px;
-      margin-bottom: $tiny;
+    @media screen and (min-width: $mobile) {
+      margin-left: 4px;
+    }
 
-      @media screen and (min-width: 405px) {
-        margin-bottom: 0;
-      }
+    @media screen and (min-width: $tablet) {
+      margin-left: $micro;
+    }
+
+    &.nav-link:not(:nth-child(2)):before {
+      content: '•';
+      padding-right: $tiny;
+      color: $green;
 
       @media screen and (min-width: $mobile) {
-        margin-bottom: $tiny;
+        padding-right: $micro;
       }
 
-      @media screen and (min-width: 587px) {
-        margin-bottom: 0;
+      @media screen and (min-width: $tablet) {
+        padding-right: $tiny;
+      }
+    }
+
+    &:hover {
+      color: $green;
+    }
+
+    &.github-btn {
+      margin-top: $tiny;
+      margin-left: $micro;
+
+      @media screen and (min-width: 688px) {
+        margin-top: 0;
       }
     }
   }
@@ -194,7 +219,7 @@ header {
     border-radius: 4px;
     background: none;
     color: white;
-    margin-right: 8px;
+    margin: 0 $micro 0 10px;
     padding-bottom: 9px;
     text-align: left;
     text-decoration: none;
@@ -203,7 +228,7 @@ header {
     line-height: 24px;
     transition: all .2s ease-in-out;
 
-    @media screen and (min-width: 844px) {
+    @media screen and (min-width: 968px) {
       display: inline;
     }
 

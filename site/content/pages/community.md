@@ -9,8 +9,6 @@ primarycta: "[Register on Eventbrite →](https://www.eventbrite.com/e/netlify-c
 
 upcomingevent:
   hook: The next development planning session is on
-  date: 2017-07-19
-  time: 8am PT
 
 howitworks: Every other week we have public development planning sessions. They're web based, last about an hour, and are geared toward contributors and those interested in contributing. Sessions currently take place every other Wednesday, 8am - 9am PT.
 

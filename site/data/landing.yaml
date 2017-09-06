@@ -7,9 +7,7 @@ hero:
     - Integrate with any build tool
     - Plug in to any static site generator
   ctas: |
-    - [Find out more →](/docs/intro)
-    - [Try it out →](/docs/test-drive)
-    - [Make it better →](/docs/contributor-guide)
+    - [Take it for a test drive →](/docs/test-drive)
 productvideo:
   thumbnail: "/img/hero-graphic.jpg"
   mp4: "/img/demo.mp4"

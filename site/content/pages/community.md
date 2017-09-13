@@ -10,12 +10,12 @@ primarycta: "[Register on Eventbrite →](https://www.eventbrite.com/e/netlify-c
 upcomingevent:
   hook: The next development planning session is on
 
-howitworks: Every other week we have public development planning sessions. They're web based, last about an hour, and are geared toward contributors and those interested in contributing. Sessions currently take place every other Wednesday, 8am - 9am PT.
+howitworks: Every other week we have public development planning sessions. They're web based, last about an hour, and are geared toward contributors and those interested in contributing. Sessions currently take place every other Wednesday, 9am - 10am PT.
 
 howtojoin: |
   **On the web:**
 
-  1. https://bluejeans.com/278173690/7613
+  1. https://bluejeans.com/278173690
 
   **By phone:**
 

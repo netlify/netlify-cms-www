@@ -1,6 +1,6 @@
 ---
 title: Custom Previews
-position: 5
+position: 50
 ---
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/customization.md) -->
 

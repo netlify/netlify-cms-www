@@ -152,6 +152,7 @@
     pre > code {
       background: initial;
       padding: initial;
+      white-space: inherit;
     }
 	}
 

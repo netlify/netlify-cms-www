@@ -201,14 +201,12 @@
 
 		th,
 		td {
-			padding: 0 $micro;
+			padding: $micro;
 		}
 
 		th {
-			text-transform: uppercase;
 			font-size: 18px;
 			font-weight: $bold;
-			height: 60px;
 		}
 
 		tbody tr {
@@ -219,7 +217,6 @@
 
 		td {
 			font-size: 14px;
-			height: 46px;
 		}
 	}
 }

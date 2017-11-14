@@ -142,10 +142,16 @@
       border-radius: $borderRadius;
     }
 
-    p > code {
+    code {
       background: $lightestGrey;
       border-radius: 2px;
       padding: 2px 6px;
+      white-space: nowrap;
+    }
+
+    pre > code {
+      background: initial;
+      padding: initial;
     }
 	}
 
@@ -195,9 +201,6 @@
 		th,
 		td {
 			padding: 0 $micro;
-
-      @media screen and (min-width: $mobile) {
-        padding: 0 $small;
       }
 		}
 

@@ -7,3 +7,10 @@ notifications:
     title: Netlify CMS Development Planning Sessions Promo
     url: >-
       https://www.eventbrite.com/e/netlify-cms-planning-session-bi-weekly-tickets-35794058994
+  - loud: true
+    message: >-
+      Chat and get questions answered with other Netlify CMS developers and
+      users in our new spectrum.chat community!
+    published: true
+    title: Spectrum.chat shoutout
+    url: 'https://spectrum.chat/netlify-cms'

@@ -9,7 +9,7 @@ notifications:
       https://www.eventbrite.com/e/netlify-cms-planning-session-bi-weekly-tickets-35794058994
   - loud: true
     message: >-
-      We have a new community on spectrum.chat! Join us now to ask questions and
+      We have a new community on spectrum.chat! Join now to ask questions and
       discuss the project with other devs!
     published: true
     title: Spectrum.chat shoutout

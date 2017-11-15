@@ -9,8 +9,8 @@ notifications:
       https://www.eventbrite.com/e/netlify-cms-planning-session-bi-weekly-tickets-35794058994
   - loud: true
     message: >-
-      Chat and get questions answered with other Netlify CMS developers and
-      users in our new spectrum.chat community!
+      We have a new community on spectrum.chat! Join us now to ask questions and
+      discuss the project with other devs!
     published: true
     title: Spectrum.chat shoutout
     url: 'https://spectrum.chat/netlify-cms'

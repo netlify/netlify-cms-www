@@ -9,7 +9,8 @@
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "docs": "node markdown.config.js"
   },
   "author": "",
   "license": "MIT",
@@ -48,5 +49,7 @@
     "whatwg-fetch": "^1.0.0",
     "yamljs": "^0.2.8"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "markdown-magic": "^0.1.13"
+  }
 }

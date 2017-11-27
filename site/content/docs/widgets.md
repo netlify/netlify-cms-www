@@ -26,7 +26,6 @@ Widgets define the data type and interface for entry fields. Netlify CMS comes w
 
 We’re always adding new widgets, and you can also [create your own](/docs/extending)!
 
-
 ### List Widget
 
 The list widget allows you to map a user-provided string with a comma delimiter into a list. Consider the following example that also demonstrates how to set default values:

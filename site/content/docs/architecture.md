@@ -1,6 +1,6 @@
 ---
 title: Architecture
-position: 9
+position: 90
 ---
 <!-- AUTO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/architecture.md) -->
 

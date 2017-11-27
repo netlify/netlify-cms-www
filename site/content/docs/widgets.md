@@ -2,7 +2,6 @@
 title: Widgets
 position: 3
 ---
-
 # Configuring your site
 
 ## Widgets
@@ -10,7 +9,7 @@ position: 3
 Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets, including:
 
 | Name       | UI                                 | Data Type                                          |
-| --------   | ---------------------------------- | ---------------------------------------------------|
+| ---------- | ---------------------------------- | -------------------------------------------------- |
 | `string`   | text input                         | string                                             |
 | `boolean`  | toggle switch                      | boolean                                            |
 | `text`     | textarea input                     | string (multiline)                                 |
@@ -71,12 +70,12 @@ The relation widget allows you to reference an existing entry from within the en
 
 The following field configuration properties are specific to fields using the relation widget:
 
-Property | Accepted Values | Description
---- | --- | ---
-`collection` | string | name of the collection being referenced
-`searchFields` | list | one or more names of fields in the referenced colleciton to search for the typed value
-`valueField` | string | name a field from the referenced collection whose value will be stored for the relation
-`name` | text input | string
+| Property       | Accepted Values | Description                                                                             |
+| -------------- | --------------- | --------------------------------------------------------------------------------------- |
+| `collection`   | string          | name of the collection being referenced                                                 |
+| `searchFields` | list            | one or more names of fields in the referenced colleciton to search for the typed value  |
+| `valueField`   | string          | name a field from the referenced collection whose value will be stored for the relation |
+| `name`         | text input      | string                                                                                  |
 
 Let's say we have a "posts" collection and an "authors" collection, and we want to select an author for each post - our config might look something like this:
 

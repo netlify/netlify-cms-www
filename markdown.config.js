@@ -17,7 +17,7 @@ const docFiles = [
   'contributor-guide.md',
   'customization.md',
   'test-drive.md',
-  'custom-authentication.md',
+  'authentication-backends.md',
 ]
 
 const markdownPaths = docFiles.map((file) => {

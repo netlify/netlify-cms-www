@@ -1,29 +1,5 @@
-# Netlify CMS
+# Former home of NetlifyCMS.org
 
-We love open-source and it looks like you do too! Contribute by submitting a pull request with your changes.
+We've move all website development into a subdirectory of the netlify-cms repo:
 
-Cheers!
-
-## Usage
-
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:
-
-```bash
-brew install hugo
-```
-
-Next, clone this repository and run:
-
-```bash
-npm install
-npm start
-```
-
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
-
-To build your static output to the `/dist` folder, use:
-
-```bash
-npm run build
-```
+https://github.com/netlify/netlify-cms/tree/master/website
